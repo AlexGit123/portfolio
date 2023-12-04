@@ -1,22 +1,46 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
-  <div class="flex h-screen">
-    <!-- Navbar -->
-    <div class="bg-gray-800 text-white w-1/5 flex flex-col items-center justify-center h-full">
-      <nav class="my-4">
-        <RouterLink to="/" class="text-xl font-bold my-2 block">Home</RouterLink>
-        <RouterLink to="/about" class="text-xl font-bold my-2 block">About</RouterLink>
-      </nav>
-    </div>
-
-    <!-- Main Content (RouterView) -->
-    <div class="flex-grow p-8">
-      <RouterView />
-    </div>
+  <!-- nav -->
+  <div class="nav-color flex justify-center sticky top-0 text-black">
+    <nav class="flex items-center justify-between">
+      <RouterLink to="/" class="p-5">
+        <a href="#">
+          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
+            Home
+          </button>
+        </a>
+      </RouterLink>
+      <RouterLink to="/about" class="p-5">
+        <a href="#">
+          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
+            About
+          </button>
+        </a>
+      </RouterLink>
+      <RouterLink to="/projects" class="p-5">
+        <a href="#">
+          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
+            Projects
+          </button>
+        </a>
+      </RouterLink>
+    </nav>
   </div>
+  <!-- web body -->
+  <HomeView />
 </template>
+<style scoped>
+.nav-color {
+  background-color: #29274C;
+}
 
-<style scoped></style>
+.button-color {
+  background-color: #7fbdec;
+
+}
+</style>
+
