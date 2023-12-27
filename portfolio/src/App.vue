@@ -4,7 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
-  <!-- nav -->
+  <!-- nav / remove bg color for cleaner look -->
   <div class="nav-color flex justify-center sticky top-0 text-black">
     <nav class="flex items-center justify-between">
       <RouterLink to="/" class="p-5">
@@ -35,7 +35,7 @@ import HomeView from '@/views/HomeView.vue'
 </template>
 <style scoped>
 .nav-color {
-  background-color: #29274C;
+  background-color: #fff;
 }
 
 .button-color {

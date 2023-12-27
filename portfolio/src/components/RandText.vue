@@ -1,12 +1,13 @@
 <!-- TextAnimation.vue -->
 <template>
-    <div id="output"></div>
+    <div :id="dynamicElementID"></div>
 </template>
   
 <script>
 export default {
     props: {
         textToAnimate: String,
+        dynamicElementID: String,
     },
     data() {
         return {
@@ -54,7 +55,7 @@ export default {
             }
 
             // Update the HTML content of the element with the id "output"
-            document.getElementById("output").innerHTML = this.finalString + this.temporaryString;
+            document.getElementById(this.dynamicElementID).innerHTML = this.finalString + this.temporaryString;
             this.temporaryString = "";
         },
     },

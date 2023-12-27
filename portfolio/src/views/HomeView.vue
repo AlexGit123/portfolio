@@ -11,32 +11,56 @@ export default {
   },
   data() {
     return {
-      name: "Alex Doerfer",
+      name: "Hi, I'm Alex Doerfer",
       welcomeMessage:
         "Hey, welcome to my portfolio. I'm a Full-Stack Software Engineer and fourth-year student at HZ University of Applied Sciences in Middelburg, Netherlands.",
+      subTitle: "Full-Stack Software Engineer"
     };
   },
 };
 </script>
 
 <template>
-  <div class="bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center">
-    <span>
-      <h1 class="text-4xl font-bold mb-2">
-        <RandText :textToAnimate="name" />
-      </h1>
-    </span>
+  <div class="bg-gray-100 grid grid-cols-2 gap-8 min-h-screen">
+    <!-- Left side content -->
+    <div class="pl-10 pt-10">
+      <img src="@/assets/me.jpg" class="w-52 h-52 rounded-full">
 
-    <img src="@/assets/me.jpg" class="w-96 h-96 rounded-full p-10">
-    <p class="text-lg mb-2">Full-Stack Software Engineer</p>
-    <span>
-      <p class="text-sm max-w-md">
-        <!-- <RandText :textToAnimate="welcomeMessage" /> -->
-        {{ welcomeMessage }}
+      <h1 class="pt-5 text-4xl font-bold mb-2">
+        <RandText dynamicElementID="text1" :textToAnimate="name" />
+      </h1>
+
+      <h2 class="pt-5 text-xl mb-2">
+        <RandText dynamicElementID="text2" :textToAnimate="subTitle" />
+      </h2>
+
+      <p class="text-m max-w-md pt-5">
+        <!-- TODO add fixed width to prevent 01s spread -->
+        <RandText dynamicElementID="text3" :textToAnimate="welcomeMessage" />
       </p>
-    </span>
+      <!-- icons -->
+      <div class="pt-20 flex space-between">
+        <a href="#" class="">
+          <img class="w-16 h-16" src="@/assets/github.png">
+        </a>
+        <a href="#" class="pl-5">
+          <img class="w-16 h-16" src="@/assets/linkedin.png">
+        </a>
+        <a href="#" class="pl-5">
+          <img class="w-16 h-16" src="@/assets/download.png">
+        </a>
+      </div>
+    </div>
+
+    <!-- Right side content -->
+    <div>
+      <!-- test right -->
+      <!-- <p>I'm always looking for new music</p> -->
+      <!-- TODO - add search, spotify API, show fav albums etc-->
+    </div>
   </div>
 
+  <!-- components -->
   <AboutView />
   <ProjectsView />
 </template>
