@@ -55,14 +55,13 @@ export default {
     <!-- Right side content -->
     <div>
       <!-- test right -->
-      <!-- <p>I'm always looking for new music</p> -->
-      <!-- TODO - add search, spotify API, show fav albums etc-->
+      <ProjectsView />
     </div>
   </div>
 
   <!-- components -->
+  <!-- TODO - add search, spotify API, show fav albums etc-->
   <AboutView />
-  <ProjectsView />
 </template>
 
 <style scoped>
