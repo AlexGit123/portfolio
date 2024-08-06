@@ -1,19 +1,21 @@
 <script>
 import ProjectsView from '@/views/ProjectsView.vue';
 import AboutCardsView from '@/views/AboutCardsView.vue'; // rename AboutCardComponent
+import HomePageView from '@/views/HomePageView.vue';
 import RandText from '@/components/RandText.vue'
 
 export default {
   components: {
     RandText,
     AboutCardsView,
-    ProjectsView
+    ProjectsView,
+    HomePageView
   },
   data() {
     return {
       name: "Hi, I'm Alex Doerfer",
       welcomeMessage:
-        "Hey, welcome to my portfolio. I'm a Full-Stack Software Engineer and fourth-year student at HZ University of Applied Sciences in Middelburg, Netherlands.",
+        "I'm a graduate student and Full-Stack Software Engineer with a passion for building web applications. Let's work.",
       subTitle: "Full-Stack Software Engineer"
     };
   },
@@ -21,60 +23,77 @@ export default {
 </script>
 
 <template>
-  <div class="bg-gray-100 grid grid-cols-2 gap-8 min-h-screen">
+  <div class="background grid grid-cols-1 min-h-screen">
+    <HomePageView />
+  </div>
+
+  <div class="background grid grid-cols-2 gap-8 min-h-screen pt-32">
     <!-- Left side content -->
-    <div class="pl-10 pt-10">
-      <img src="@/assets/github.jpg" class="w-52 h-52 rounded-full">
+    <div class="pl-40">
+      <div class="flex justify-center items-center w-72 h-72 rounded-full color2">
+        <div class="w-64 h-64 rounded-full color1">
+          <div class="flex justify-center items-center py-2">
+            <img src="@/assets/me.jpg" class="w-60 h-60 rounded-full">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right side content -->
+    <div>
+      <div class="pt-10">
+        <h1 class="pt-5 text-6xl font-bold mb-2">
+          <RandText dynamicElementID="text1" :textToAnimate="name" />
+        </h1>
+        <p class="pb-10">Full-Stack Software Engineer</p>
 
-      <h1 class="pt-5 text-4xl font-bold mb-2">
-        <RandText dynamicElementID="text1" :textToAnimate="name" />
-      </h1>
+        <p>{{ this.welcomeMessage }}</p>
+      </div>
 
-      <h2 class="pt-5 text-xl mb-2">
-        <RandText dynamicElementID="text2" :textToAnimate="subTitle" />
-      </h2>
-
-      <p class="text-m max-w-md pt-5">
-        <!-- TODO add fixed width to prevent 01s spread -->
-        <RandText dynamicElementID="text3" :textToAnimate="welcomeMessage" />
-      </p>
       <!-- icons -->
       <div class="pt-20 flex space-between">
-        <a href="#" class="">
-          <img class="w-16 h-16" src="@/assets/github.png">
+        <a href="#" class="icon-container">
+          <img class="w-24 h-24 icon" src="@/assets/github.png">
         </a>
-        <a href="#" class="pl-5">
-          <img class="w-16 h-16" src="@/assets/linkedin.png">
+        <a href="#" class="pl-5 icon-container">
+          <img class="w-24 h-24 icon" src="@/assets/linkedin.png">
         </a>
-        <a href="#" class="pl-5">
-          <img class="w-16 h-16" src="@/assets/download.png">
+        <a href="#" class="pl-5 icon-container">
+          <img class="w-24 h-24 icon" src="@/assets/download.png">
         </a>
       </div>
     </div>
-
-    <!-- Right side content -->
-    <div>
-      <!-- test right -->
-      <ProjectsView />
-    </div>
   </div>
 
-  <!-- components -->
-  <!-- TODO - add search, spotify API, show fav albums etc-->
-  <div class="bg-gray-100 grid grid-cols-2 gap-8 min-h-screen">
-    <!-- Left side content -->
-    <AboutCardsView />
-
-    <!-- Right side content -->
-    <div>
-      <!-- test right -->
-      <!-- <ProjectsView /> -->
-    </div>
+  <!-- second page -->
+  <div>
+    <ProjectsView />
   </div>
+
+  <!-- third page -->
+  <AboutCardsView />
 </template>
 
+<footer></footer>
+
 <style scoped>
-.background {
-  background-color: #534B62;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+.color1 {
+  background-color: #031824;
+  /* background-color: #0074B7; */
+}
+
+.color2 {
+  background-color: #ffffff;
+  /* background-color: #0074B7; */
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out
+}
+
+.icon-container:hover .icon {
+  transform: scale(1.2)
 }
 </style>

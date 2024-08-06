@@ -1,30 +1,15 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+// import { RouterLink } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 </script>
 
 <template>
-  <!-- nav / remove bg color for cleaner look -->
-  <div class="nav-color flex justify-center sticky top-0 text-black">
+  <div class="background nav-color flex justify-left sticky top-0 text-black">
     <nav class="flex items-center justify-between">
       <RouterLink to="/" class="p-5">
         <a href="#">
-          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
-            Home
-          </button>
-        </a>
-      </RouterLink>
-      <RouterLink to="/about" class="p-5">
-        <a href="#">
-          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
-            About
-          </button>
-        </a>
-      </RouterLink>
-      <RouterLink to="/projects" class="p-5">
-        <a href="#">
-          <button class="button-color text-black rounded-full px-4 py-2 mt-4">
-            Projects
+          <button class="text-white rounded-full px-4 py-2 mt-4">
+            ALEX
           </button>
         </a>
       </RouterLink>
@@ -35,12 +20,6 @@ import HomeView from '@/views/HomeView.vue'
 </template>
 <style scoped>
 .nav-color {
-  background-color: #fff;
-}
-
-.button-color {
-  background-color: #7fbdec;
-
+  background-color: #242729;
 }
 </style>
-
