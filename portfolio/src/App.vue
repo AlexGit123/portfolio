@@ -1,24 +1,25 @@
 <script setup>
-// import { RouterLink } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
-</script>
+import HomePageView from '@/views/HomePageView.vue'
+import NavBar from '@/components/NavBar.vue'
 
+</script>
 <template>
   <div class="background nav-color flex justify-left sticky top-0 text-black">
-    <nav class="flex items-center justify-between">
-      <RouterLink to="/" class="p-5">
-        <a href="#">
-          <button class="text-white rounded-full px-4 py-2 mt-4">
-            ALEX
-          </button>
-        </a>
-      </RouterLink>
-    </nav>
+    <NavBar/>
   </div>
-  <!-- web body -->
-  <HomeView />
+  <HomePageView />
 </template>
-<style scoped>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+
+.title {
+  font-size: 600%;
+}
+
+.font {
+  font-family: 'Satoshi', sans-serif;
+}
+
 .nav-color {
   background-color: #242729;
 }

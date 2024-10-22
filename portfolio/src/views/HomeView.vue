@@ -1,21 +1,15 @@
 <script>
-import ProjectsView from '@/views/ProjectsView.vue';
-import AboutCardsView from '@/views/AboutCardsView.vue'; // rename AboutCardComponent
-import HomePageView from '@/views/HomePageView.vue';
 import RandText from '@/components/RandText.vue'
 
 export default {
   components: {
     RandText,
-    AboutCardsView,
-    ProjectsView,
-    HomePageView
   },
   data() {
     return {
       name: "Hi, I'm Alex Doerfer",
       welcomeMessage:
-        "I'm a graduate student and Full-Stack Software Engineer with a passion for building web applications. Let's work.",
+        "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
       subTitle: "Full-Stack Software Engineer"
     };
   },
@@ -23,54 +17,45 @@ export default {
 </script>
 
 <template>
-  <div class="background grid grid-cols-1 min-h-screen">
-    <HomePageView />
-  </div>
-
-  <div class="background grid grid-cols-2 gap-8 min-h-screen pt-32">
-    <!-- Left side content -->
-    <div class="pl-40">
-      <div class="flex justify-center items-center w-72 h-72 rounded-full color2">
-        <div class="w-64 h-64 rounded-full color1">
-          <div class="flex justify-center items-center py-2">
-            <img src="@/assets/me.jpg" class="w-60 h-60 rounded-full">
+  <!-- <div class="flex flex-wrap"> -->
+  <div class="">
+    <div class="grid grid-cols-2 gap-2">
+      <!-- Left side content -->
+      <div class="pl-20">
+        <div class="flex justify-center items-center w-72 h-72">
+          <div class="w-64 h-64 rounded-full color1">
+            <div class="flex justify-center items-center py-2">
+              <img src="@/assets/me.jpg" class="w-60 h-60 rounded-full">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Right side content -->
-    <div>
-      <div class="pt-10">
-        <h1 class="pt-5 text-6xl font-bold mb-2">
-          <RandText dynamicElementID="text1" :textToAnimate="name" />
-        </h1>
-        <p class="pb-10">Full-Stack Software Engineer</p>
+      <!-- Right side content -->
+      <div>
+        <div class="">
+          <p class="font text-5xl pt-5 font-bold mb-2">
+            <RandText dynamicElementID="text1" :textToAnimate="name" />
+          </p>
+          <!-- <p class="font pt-10">Software Engineer</p> -->
 
-        <p>{{ this.welcomeMessage }}</p>
-      </div>
+          <p class="font text-base p-5 ">{{ this.welcomeMessage }}</p>
+        </div>
 
-      <!-- icons -->
-      <div class="pt-20 flex space-between">
-        <a href="#" class="icon-container">
-          <img class="w-24 h-24 icon" src="@/assets/github.png">
-        </a>
-        <a href="#" class="pl-5 icon-container">
-          <img class="w-24 h-24 icon" src="@/assets/linkedin.png">
-        </a>
-        <a href="#" class="pl-5 icon-container">
-          <img class="w-24 h-24 icon" src="@/assets/download.png">
-        </a>
+        <!-- icons -->
+        <div class="pt-10 pl-5 flex space-between">
+          <a href="#" class=" icon-container">
+            <img class="w-16 h-16 icon" src="@/assets/github1.svg">
+          </a>
+          <a href="#" class="pl-5 icon-container">
+            <img class="w-16 h-16 icon" src="@/assets/linkedin.svg">
+          </a>
+          <a href="#" class="pl-5 icon-container">
+            <img class="w-16 h-16 icon" src="@/assets/download.png">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- second page -->
-  <div>
-    <ProjectsView />
-  </div>
-
-  <!-- third page -->
-  <AboutCardsView />
 </template>
 
 <footer></footer>
