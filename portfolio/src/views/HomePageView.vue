@@ -15,7 +15,7 @@
                 <div class="text-right text-white flex flex-col items-end">
                     <button @click="currentComponent = 'HomeView'" class="font pb-2">ABOUT</button>
                     <button @click="currentComponent = 'ProjectsView'" class="font pb-2">PROJECTS</button>
-                    <button class="font pb-2">EXPERIENCE</button>
+                    <button @click="currentComponent = 'ExperienceView'" class="font pb-2">EXPERIENCE</button>
                     <button class="font pb-2">CONTACT</button>
                 </div>
             </div>
@@ -27,12 +27,14 @@
 import HomeView from './HomeView.vue';
 import ProjectsView from './ProjectsView.vue';
 import NavBar from '@/components/NavBar.vue';
+import ExperienceView from './ExperienceView.vue';
 
 export default {
     components: {
         HomeView,
         ProjectsView,
         NavBar,
+        ExperienceView
     },
     data() {
         return {
