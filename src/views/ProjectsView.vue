@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ProjectCardComponent from '@/components/ProjectCardComponent.vue';
+import ProjectCardComponent from '../components/ProjectCardComponent.vue';
 
 export default {
     components: {

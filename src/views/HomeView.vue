@@ -1,5 +1,5 @@
 <script>
-import RandText from '@/components/RandText.vue'
+import RandText from '../components/RandText.vue'
 
 export default {
   components: {
