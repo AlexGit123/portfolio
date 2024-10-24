@@ -26,7 +26,7 @@
 <script>
 import HomeView from './HomeView.vue';
 import ProjectsView from './ProjectsView.vue';
-import NavBar from '@/components/NavBar.vue';
+import NavBar from '../components/NavBar.vue';
 import ExperienceView from './ExperienceView.vue';
 
 export default {
