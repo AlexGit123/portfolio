@@ -1,7 +1,7 @@
 <template>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-3">
         <!-- Left side content -->
-        <div class="flex pl-10 ">
+        <div class="flex pl-10">
             <ul class="flex flex-col justify-center space-y-4">
                 <a href="#" />
                 <li v-for="project in projects" :key="project.id" @click="handleClick(project.id)"
@@ -15,9 +15,13 @@
             </ul>
         </div>
         <!-- Right side content -->
-        <div class="pt-10">
+        <div class="">
             <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
                 :project="getProjectById(selectedProjectId)" />
+        </div>
+
+        <div class="pl-10">
+            <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
         </div>
     </div>
 </template>
@@ -42,12 +46,9 @@ export default {
     },
     methods: {
         handleClick(id) {
-            console.log(this.projects[0].img)
             this.selectedProjectId = id
-            console.log('id ' + this.selectedProjectId)
         },
         getProjectById(id) {
-            console.log(id);
             return this.projects.find(project => project.id === id);
         },
     }
