@@ -16,7 +16,7 @@
                     <button @click="currentComponent = 'HomeView'" class="font pb-2">ABOUT</button>
                     <button @click="currentComponent = 'ProjectsView'" class="font pb-2">PROJECTS</button>
                     <button @click="currentComponent = 'ExperienceView'" class="font pb-2">EXPERIENCE</button>
-                    <button class="font pb-2">CONTACT</button>
+                    <button @click="currentComponent = 'ContactView'" class="font pb-2">CONTACT</button>
                 </div>
             </div>
         </div>
@@ -28,13 +28,15 @@ import HomeView from './HomeView.vue';
 import ProjectsView from './ProjectsView.vue';
 import NavBar from '../components/NavBar.vue';
 import ExperienceView from './ExperienceView.vue';
+import ContactView from './ContactView.vue';
 
 export default {
     components: {
         HomeView,
         ProjectsView,
         NavBar,
-        ExperienceView
+        ExperienceView,
+        ContactView,
     },
     data() {
         return {
