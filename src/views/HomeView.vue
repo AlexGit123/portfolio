@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-      name: "Hi, I'm Alex Doerfer",
+      name: "Hi, I'm Alex",
       welcomeMessage:
         "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
       subTitle: "Full-Stack Software Engineer"
@@ -43,7 +43,7 @@ export default {
 
         <!-- icons -->
         <div class="pt-10 pl-5 flex space-between">
-          <a href="#" class=" icon-container">
+          <a href="https://github.com/AlexGit123" class=" icon-container">
             <img class="w-16 h-16 icon" src="@/assets/github1.svg">
           </a>
           <a href="#" class="pl-5 icon-container">
