@@ -2,7 +2,7 @@
 <template>
         <div class="pb-8">
             <div class="flex">
-                <img class="rounded" :src="(`src/assets/me.jpg`)">
+                <img class="rounded" :src="(`/assets/me.jpg`)">
                 <!-- <img class="rounded" :src="(`@/assets/${project.img}`)"> -->
             </div>
         </div>
