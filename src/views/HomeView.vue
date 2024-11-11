@@ -43,14 +43,15 @@ export default {
 
         <!-- icons -->
         <div class="pt-10 pl-5 flex space-between">
+
           <a href="https://github.com/AlexGit123" class=" icon-container">
-            <img class="w-16 h-16 icon" src="@/assets/github1.svg">
+            <img class="icon" src="@/assets/github1.svg">
           </a>
           <a href="#" class="pl-5 icon-container">
-            <img class="w-16 h-16 icon" src="@/assets/linkedin.svg">
+            <img class="icon" src="@/assets/linkedin.svg">
           </a>
           <a href="#" class="pl-5 icon-container">
-            <img class="w-16 h-16 icon" src="@/assets/download.png">
+            <img class="icon" src="@/assets/download.svg">
           </a>
         </div>
       </div>
@@ -58,7 +59,6 @@ export default {
   </div>
 </template>
 
-<footer></footer>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
@@ -75,7 +75,10 @@ export default {
 }
 
 .icon {
-  transition: transform 0.3s ease-in-out
+  transition: transform 0.3s ease-in-out;
+  width: auto;
+  height: 80px;
+
 }
 
 .icon-container:hover .icon {
