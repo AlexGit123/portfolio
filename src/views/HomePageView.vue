@@ -3,7 +3,6 @@
         <div class="min-h-screen w-full">
             <div id="gradient" class="h-1/2 border rounded-md flex flex-col items-center justify-center">
                 <template v-if="!currentComponent">
-                    <!-- <h1 class="title font">⠁⠇⠑⠭</h1> -->
                     <svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
 
                         <!-- Character: 'a' -->
@@ -144,6 +143,30 @@ export default {
 }
 
 .filled {
+    opacity: 0;
     fill: black;
+    animation: fadeIn 1s forwards;
+}
+
+#char-a .filled {
+    animation-delay: 0s;
+}
+
+#char-l .filled {
+    animation-delay: 0.5s;
+}
+
+#char-e .filled {
+    animation-delay: 1s;
+}
+
+#char-x .filled {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 </style>
