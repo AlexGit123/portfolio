@@ -77,7 +77,7 @@ export default {
 .icon {
   transition: transform 0.3s ease-in-out;
   width: auto;
-  height: 80px;
+  height: 50px;
 
 }
 

@@ -15,6 +15,13 @@ export default {
         },
     },
     methods: {
+        getImageURL() {
+            try {
+                return `@/assets/${this.project.img}`
+            } catch (e) {
+                console.log("image not found")
+            }
+        },
     }
 };
 </script>
