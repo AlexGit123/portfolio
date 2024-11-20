@@ -2,7 +2,9 @@
 <template>
         <div class="pb-8">
             <div class="flex">
-                <img class="rounded" :src="(`src/assets/${project.img}`)">
+                <!-- <img class="rounded" :src="(`src/assets/${project.img}`)"> -->
+                <img class="rounded" :src="getImageURL()">
+
             </div>
         </div>
 </template>
@@ -17,7 +19,7 @@ export default {
     methods: {
         getImageURL() {
             try {
-                return `@/assets/${this.project.img}`
+                return `src/assets/${this.project.img}`
             } catch (e) {
                 console.log("image not found")
             }
