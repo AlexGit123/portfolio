@@ -1,8 +1,6 @@
-<!-- TODO add content, test for more than four project cards -->
 <template>
         <div class="pb-8">
             <div class="flex">
-                <!-- <img class="rounded" :src="(`src/assets/${project.img}`)"> -->
                 <img class="rounded" :src="getImageURL()">
 
             </div>
@@ -19,7 +17,6 @@ export default {
     methods: {
         getImageURL() {
             try {
-                // return `src/assets/${this.project.img}`
                 return (`/${this.project.img}`);
             } catch (e) {
                 console.log("image not found")
