@@ -19,7 +19,8 @@ export default {
     methods: {
         getImageURL() {
             try {
-                return `src/assets/${this.project.img}`
+                // return `src/assets/${this.project.img}`
+                return (`/${this.project.img}`);
             } catch (e) {
                 console.log("image not found")
             }
