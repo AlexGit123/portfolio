@@ -36,7 +36,7 @@ export default {
     data() {
         return {
             projects: [
-                { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting', githubLink: '', img: "favicon.ico" },
+                { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting', githubLink: '', img: "portfolioimg.png" },
                 { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with innovative teaching tools', githubLink: '', img: "portfolioimg.png" },
                 { id: 3, title: 'IMDB Movies', description: 'This is the website you are currently viewing', githubLink: '', img: "portfolioimg.png" },
                 { id: 4, title: 'YourSurpise', description: 'This is the website you are currently viewing', githubLink: '', img: 'portfolioimg.png' },
