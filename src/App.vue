@@ -4,7 +4,6 @@ import NavBar from './components/NavBar.vue'
 
 </script>
 <template>
-  
   <div class="background nav-color flex justify-left sticky top-0 text-black">
     <NavBar/>
   </div>
@@ -18,7 +17,7 @@ import NavBar from './components/NavBar.vue'
 }
 
 .font {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Geneva', sans-serif;
 }
 
 .nav-color {

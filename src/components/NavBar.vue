@@ -7,7 +7,6 @@ export default {
         }
     }
 }
-
 </script>
 <template>
     <nav class="pl-5 flex items-center justify-between">

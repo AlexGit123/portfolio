@@ -8,7 +8,7 @@
                     class="flex space-x-2 items-center text-xl"
                     :class="{ 'selected-project': selectedProjectId === project.id }">
                     <span class="font">{{ project.title }}</span>
-                    <a href="#" class="pl-5 icon-container">
+                    <a href="#" class="pl-5">
                         <img class="w-6 h-6 icon" src="@/assets/github1.svg">
                     </a>
                 </li>
@@ -37,7 +37,7 @@ export default {
         return {
             projects: [
                 { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting', githubLink: '', img: "portfolioimg.png" },
-                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with innovative teaching tools', githubLink: '', img: "portfolioimg.png" },
+                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with innovative teaching tools.', githubLink: '', img: "portfolioimg.png" },
                 { id: 3, title: 'IMDB Movies', description: 'This is the website you are currently viewing', githubLink: '', img: "portfolioimg.png" },
                 { id: 4, title: 'YourSurpise', description: 'This is the website you are currently viewing', githubLink: '', img: 'portfolioimg.png' },
             ],

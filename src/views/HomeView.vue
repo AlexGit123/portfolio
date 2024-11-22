@@ -36,22 +36,27 @@ export default {
           <p class="font text-5xl pt-5 font-bold mb-2">
             <RandText dynamicElementID="text1" :textToAnimate="name" />
           </p>
-          <!-- <p class="font pt-10">Software Engineer</p> -->
-
-          <p class="font text-base p-5 ">{{ this.welcomeMessage }}</p>
+          <span>
+            <p class="font text-base p-5 ">Recent HBO-ICT international graduate at HZ University of Applied Sciences.
+              <br />
+              I'm a Software Engineer with a passion for building web applications and learning new technologies.
+              Let's work.
+            </p>
+          </span>
         </div>
-
         <!-- icons -->
         <div class="pt-10 pl-5 flex space-between">
-
-          <a href="https://github.com/AlexGit123" class=" icon-container">
+          <a href="https://github.com/AlexGit123" class=" icon-container text-center text-sm">
             <img class="icon" src="@/assets/github1.svg">
+            GitHub
           </a>
-          <a href="#" class="pl-5 icon-container">
+          <a href="#" class="pl-5 icon-container text-center text-sm">
             <img class="icon" src="@/assets/linkedin.svg">
+            LinkedIN
           </a>
-          <a href="#" class="pl-5 icon-container">
+          <a href="#" class="pl-5 icon-container text-center text-sm">
             <img class="icon" src="@/assets/download.svg">
+            CV
           </a>
         </div>
       </div>
