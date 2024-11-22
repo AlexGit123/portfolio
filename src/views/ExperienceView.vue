@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 p-5 border">
+    <div class="grid grid-cols-2 p-5">
         <div class="pl-10">
             <div class="pb-10">
                 <h1 class="text-2xl">Joint Research Center Zeeland</h1>

@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-3">
         <!-- Left side content -->
-        <div class="flex pl-10">
+        <div class="flex p-10">
             <ul class="flex flex-col justify-center space-y-4">
                 <a href="#" />
                 <li v-for="project in projects" :key="project.id" @click="handleClick(project.id)"
@@ -20,7 +20,7 @@
                 :project="getProjectById(selectedProjectId)" />
         </div>
 
-        <div class="pl-10">
+        <div class="pl-10 pr-10">
             <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
         </div>
     </div>
