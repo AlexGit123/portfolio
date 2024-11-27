@@ -1,39 +1,39 @@
 <template>
-    <div class="w-full p-10">
-        <h1 class="text-4xl">Projects</h1>
-    </div>
     <!-- grid -->
-    <div class="grid grid-cols-2">
-        <!-- Left side content -->
-        <div class="pl-10 pr-10 flex flex-col justify-between">
-            <div>
-                <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
-                <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
-            </div>
-            <div class="flex flex-col justify-end">
-                <div class="flex justify-end pb-4 space-x-4">
-                    <div class="cursor-pointer" v-on:click="handleBackClick()">
-                        <img class="icon" src="@/assets/arrow_back.svg">
+    <div class="w-full p-4">
+        <h1 class="text-4xl pl-10">Projects</h1>
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Left side content -->
+            <div class="pl-10 pr-10 flex flex-col justify-between">
+                <div class="pt-4">
+                    <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
+                    <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
+                </div>
+                <div class="flex flex-col justify-end">
+                    <div class="flex justify-end pb-4 space-x-4">
+                        <div class="cursor-pointer" v-on:click="handleBackClick()">
+                            <img class="icon" src="@/assets/arrow_back.svg">
+                        </div>
+                        <div class="cursor-pointer" v-on:click="handleForwardClick()">
+                            <img class="icon" src="@/assets/arrow_forward.svg">
+                        </div>
                     </div>
-                    <div class="cursor-pointer" v-on:click="handleForwardClick()">
-                        <img class="icon" src="@/assets/arrow_forward.svg">
+                    <div class="flex justify-center space-x-2">
+                        <div v-for="project in projects" :key="project.id">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20">
+                                <circle cx="6" cy="8" r="4" stroke="black"
+                                    :fill="project.id === selectedProjectId ? 'black' : 'none'" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                <div class="flex justify-center space-x-2">
-                    <div v-for="project in projects" :key="project.id">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20">
-                            <circle cx="6" cy="8" r="4" stroke="black"
-                                :fill="project.id === selectedProjectId ? 'black' : 'none'" />
-                        </svg>
-                    </div>
-                </div>
             </div>
-        </div>
-        <!-- Right side content -->
-        <div class="pb-2">
-            <div>
-                <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
-                    :project="getProjectById(selectedProjectId)" />
+            <!-- Right side content -->
+            <div class="pb-2 flex justify-center">
+                <div>
+                    <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
+                        :project="getProjectById(selectedProjectId)" class="w-full  h-full" />
+                </div>
             </div>
         </div>
     </div>
