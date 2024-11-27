@@ -25,7 +25,6 @@
                     into company data from their various locations. </p>
             </div>
         </div>
-
     </div>
 </template>
 <script>
