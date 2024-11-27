@@ -1,27 +1,37 @@
 <template>
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-2">
         <!-- Left side content -->
-        <div class="flex p-10">
-            <ul class="flex flex-col justify-center space-y-4">
-                <a href="#" />
-                <li v-for="project in projects" :key="project.id" @click="handleClick(project.id)"
-                    class="flex space-x-2 items-center text-xl"
-                    :class="{ 'selected-project': selectedProjectId === project.id }">
-                    <span class="font">{{ project.title }}</span>
-                    <a href="#" class="pl-5">
-                        <img class="w-6 h-6 icon" src="@/assets/github1.svg">
-                    </a>
-                </li>
-            </ul>
+        <div class="flex pl-4">
+            <div>
+                <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
+                    :project="getProjectById(selectedProjectId)" />
+            </div>
         </div>
         <!-- Right side content -->
-        <div class="">
-            <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
-                :project="getProjectById(selectedProjectId)" />
-        </div>
+        <div class="pl-10 pr-10 flex flex-col justify-between">
+            <div>
+                <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
+                <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
+            </div>
 
-        <div class="pl-10 pr-10">
-            <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
+            <div class="flex flex-col justify-end">
+                <div class="flex justify-end pb-4 space-x-4">
+                    <div class="cursor-pointer" v-on:click="handleBackClick()">
+                        <img class="icon" src="@/assets/arrow_back.svg">
+                    </div>
+                    <div class="cursor-pointer" v-on:click="handleForwardClick()">
+                        <img class="icon" src="@/assets/arrow_forward.svg">
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-2">
+                    <div v-for="project in projects" :key="project.id">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20">
+                            <circle cx="6" cy="8" r="4" stroke="black"
+                                :fill="project.id === selectedProjectId ? 'black' : 'none'" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -36,17 +46,26 @@ export default {
     data() {
         return {
             projects: [
-                { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting', githubLink: '', img: "portfolioimg.png" },
-                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with innovative teaching tools.', githubLink: '', img: "portfolioimg.png" },
-                { id: 3, title: 'IMDB Movies', description: 'This is the website you are currently viewing', githubLink: '', img: "portfolioimg.png" },
-                { id: 4, title: 'YourSurpise', description: 'This is the website you are currently viewing', githubLink: '', img: 'portfolioimg.png' },
+                { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting. It is built with Vue and Tailwind! I am making continuous improvements to the design so stay tuned.', githubLink: '', img: "portfolioimg.png" },
+                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with an e-learning/teaching tool. It was built with Unreal Engine and the web-based e-tool was made with Django', githubLink: '', img: "portfolioimg.png" },
+                { id: 3, title: 'IMDB Movies', description: 'In progress', githubLink: '', img: "portfolioimg.png" },
+                { id: 4, title: 'YourSurpise', description: 'In progress', githubLink: '', img: 'portfolioimg.png' },
             ],
             selectedProjectId: 1,
         };
     },
     methods: {
-        handleClick(id) {
-            this.selectedProjectId = id
+        handleBackClick() {
+            if (this.selectedProjectId > this.projects[0].id) {
+                this.selectedProjectId--;
+                console.log(this.selectedProjectId);
+            }
+        },
+        handleForwardClick() {
+            if (this.selectedProjectId < this.projects.length) {
+                this.selectedProjectId++;
+                console.log(this.selectedProjectId);
+            }
         },
         getProjectById(id) {
             return this.projects.find(project => project.id === id);
@@ -54,28 +73,4 @@ export default {
     }
 };
 </script>
-<style>
-.project-color {
-    background-color: #0074B7;
-}
-
-.square-color {
-    background-color: #1C1C1C;
-}
-
-.square-color1 {
-    background-color: #DADDD8;
-}
-
-.square-color2 {
-    background-color: #ECEBE4;
-}
-
-.square-color3 {
-    background-color: #EEF0F2;
-}
-
-.selected-project {
-    border-bottom: 2px solid #1C1C1C;
-}
-</style>
+<style></style>

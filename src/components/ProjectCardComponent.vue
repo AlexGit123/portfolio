@@ -1,7 +1,7 @@
 <template>
-            <div class="flex pt-4">
-                <img class="rounded" :src="getImageURL()">
-            </div>
+    <div class="">
+        <img class="rounded" :src="getImageURL()">
+    </div>
 </template>
 <script>
 export default {
