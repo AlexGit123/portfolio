@@ -4,7 +4,7 @@ import NavBar from './components/NavBar.vue'
 
 </script>
 <template>
-  <div class="background nav-color flex justify-left sticky top-0 text-black">
+  <div class="background nav-color flex justify-left stick text-black">
     <NavBar/>
   </div>
   <HomePageView />

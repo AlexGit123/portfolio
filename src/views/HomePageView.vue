@@ -1,7 +1,8 @@
 <template>
     <div class="background flex justify-center p-10">
         <div class="min-h-screen w-full">
-            <div id="gradient" class="gradient h-1/2 border rounded-md flex flex-col items-center justify-center">
+            <div id="gradient"
+                class="gradient h-1/2 border border-blue-600 rounded-md flex flex-col items-center justify-center">
                 <template v-if="!currentComponent">
                     <svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
 
@@ -89,31 +90,8 @@ export default {
         handleClick(id) {
             console.log("test", id)
         },
-        generateGradient() {
-            // let hexVals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
-
-            // function populate(a) {
-            //     for (let i = 0; i < 6; i++) {
-            //         // console.log(i)
-            //         let x = Math.round(Math.random() * 15);
-            //         let y = hexVals[x];
-            //         a += y;
-            //     }
-            //     return a;
-            // }
-
-            // let color1 = populate('#');
-            // let color2 = populate('#');
-
-            // let angle = Math.round(Math.random() * 360);
-
-            // let gradient = "linear-gradient(" + angle + "deg, " + color1 + ", " + color2 + ")";
-
-            // document.getElementById('gradient').style.background = gradient;
-        },
     },
     mounted() {
-        this.generateGradient();
     }
 };
 </script>
@@ -129,7 +107,8 @@ export default {
 }
 
 .gradient {
-    background: linear-gradient(90deg, #4b4747 0%, #e3dcdf 100%);
+    /* background: linear-gradient(90deg, #4b4747 0%, #e3dcdf 100%); */
+    background: linear-gradient(90deg, #939191 0%, #9a9b9c 100%);
 }
 
 .background {

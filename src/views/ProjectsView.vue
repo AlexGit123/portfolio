@@ -1,19 +1,15 @@
 <template>
+    <div class="w-full p-10">
+        <h1 class="text-4xl">Projects</h1>
+    </div>
+    <!-- grid -->
     <div class="grid grid-cols-2">
         <!-- Left side content -->
-        <div class="flex pl-4">
-            <div>
-                <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
-                    :project="getProjectById(selectedProjectId)" />
-            </div>
-        </div>
-        <!-- Right side content -->
         <div class="pl-10 pr-10 flex flex-col justify-between">
             <div>
                 <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
                 <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
             </div>
-
             <div class="flex flex-col justify-end">
                 <div class="flex justify-end pb-4 space-x-4">
                     <div class="cursor-pointer" v-on:click="handleBackClick()">
@@ -33,6 +29,13 @@
                 </div>
             </div>
         </div>
+        <!-- Right side content -->
+        <div class="pb-2">
+            <div>
+                <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
+                    :project="getProjectById(selectedProjectId)" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -47,7 +50,7 @@ export default {
         return {
             projects: [
                 { id: 1, title: 'Portfolio', description: 'This is the website you are currently visiting. It is built with Vue and Tailwind! I am making continuous improvements to the design so stay tuned.', githubLink: '', img: "portfolioimg.png" },
-                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with an e-learning/teaching tool. It was built with Unreal Engine and the web-based e-tool was made with Django', githubLink: '', img: "portfolioimg.png" },
+                { id: 2, title: 'Digital Anatomy', description: 'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with an e-learning/teaching tool. It was built with Unreal Engine and the web-based e-tool was made with Django', githubLink: '', img: "digital_anatomy.png" },
                 { id: 3, title: 'IMDB Movies', description: 'In progress', githubLink: '', img: "portfolioimg.png" },
                 { id: 4, title: 'YourSurpise', description: 'In progress', githubLink: '', img: 'portfolioimg.png' },
             ],

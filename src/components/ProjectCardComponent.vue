@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <img class="rounded" :src="getImageURL()">
+    <div class="flex justify-center">
+        <img class="rounded w-9/12 max-h-auto" :src="getImageURL()">
     </div>
 </template>
 <script>
