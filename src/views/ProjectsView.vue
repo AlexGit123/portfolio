@@ -1,6 +1,6 @@
 <template>
     <!-- grid -->
-    <div class="w-full p-4">
+    <div class="w-full p-4 animate-fade-in text-white">
         <h1 class="text-4xl pl-10">Projects</h1>
         <div class="grid grid-cols-2 gap-6">
             <!-- Left side content -->
@@ -22,7 +22,7 @@
                         <div v-for="project in projects" :key="project.id">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20">
                                 <circle cx="6" cy="8" r="4" stroke="black"
-                                    :fill="project.id === selectedProjectId ? 'black' : 'none'" />
+                                    :fill="project.id === selectedProjectId ? 'white' : 'none'" />
                             </svg>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
             <div class="pb-2 flex justify-center">
                 <div>
                     <ProjectCardComponent v-if="selectedProjectId" :key="selectedProjectId"
-                        :project="getProjectById(selectedProjectId)" class="w-full  h-full" />
+                        :project="getProjectById(selectedProjectId)" class="" />
                 </div>
             </div>
         </div>
@@ -76,4 +76,20 @@ export default {
     }
 };
 </script>
-<style></style>
+<style scoped>
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* transform: translateY(1000px); */
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in
+}
+</style>

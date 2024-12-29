@@ -1,12 +1,12 @@
 <script>
-import RandText from '../components/RandText.vue'
+// import RandText from '../components/RandText.vue'
 export default {
   components: {
-    RandText,
+
   },
   data() {
     return {
-      name: "Hi, I'm Alex",
+      name: "I'm Alex",
       welcomeMessage:
         "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
       subTitle: "Full-Stack Software Engineer"
@@ -16,69 +16,72 @@ export default {
 </script>
 <template>
   <!-- <div class="flex flex-wrap"> -->
-  <div class="grid grid-cols-2 gap-2">
+  <div class="grid grid-cols-2 gap-2 animate-fade-in min-h-screen items-center">
     <!-- Left side content -->
-    <div class="pl-20">
-      <div>
-        <p class="font text-4xl pt-5 font-bold mb-2">
-          <RandText dynamicElementID="text1" :textToAnimate="name" />
-        </p>
-        <p class="font text-base pt-4">Recent HBO-ICT international graduate at HZ UoAS.
-          <br />
+    <div class="flex flex-col items-center justify-center pl-10 text-white">
+      <div class="w-full">
+        <div class="flex items-center">
+          <div>
+            <p class="font-extrabold text-8xl mb-2">Hi,</p>
+          </div>
+          <div class="flex justify-end w-full">
+            <div class="border rounded-full w-24 h-24 flex items-center justify-center">
+              <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full">
+            </div>
+          </div>
+        </div>
+        <p class="text-2xl mt-4">I'm Alex</p>
+        <p class="text-2xl mt-4">
           I'm a Software Engineer with a passion for building web applications, crafting designs, and learning
-          new technologies. 
+          new technologies. I'm most familiar with Vue, Django, Laravel, JavaScript, Python, and PHP.
         </p>
       </div>
-      <!-- icons -->
-      <div class="pt-10 pl-5 flex space-between">
-        <a href="https://github.com/AlexGit123" class=" icon-container text-center text-sm">
-          <img class="icon" src="@/assets/github1.svg">
+    </div>
+
+    <!-- Right side content -->
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex text-center space-x-5">
+        <a href="https://github.com/AlexGit123" class="icon-container text-sm text-gray-500">
+          <img class="icon" src="@/assets/github1.svg" alt="GitHub">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/alex-doerfer-a004611b7/" class="pl-5 icon-container text-center text-sm">
-          <img class="icon" src="@/assets/linkedin.svg">
-          LinkedIN
+        <a href="https://www.linkedin.com/in/alex-doerfer-a004611b7/" class="icon-container text-sm text-gray-500">
+          <img class="icon" src="@/assets/linkedin.svg" alt="LinkedIn">
+          LinkedIn
         </a>
-        <a href="#" class="pl-5 icon-container text-center text-sm">
-          <img class="icon" src="@/assets/download.svg">
+        <a href="#" class="icon-container text-sm text-gray-500">
+          <img class="icon" src="@/assets/download.svg" alt="CV">
           CV
         </a>
       </div>
     </div>
-    <!-- Right side content -->
-    <div class="pl-20">
-      <div class="flex justify-center items-center w-72 h-72">
-        <div class="w-64 h-64 rounded-full color1">
-          <div class="flex justify-center items-center py-2">
-            <img src="@/assets/me.jpg" class="w-60 h-60 rounded-full">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
 </template>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-.color1 {
-  background-color: #031824;
-  /* background-color: #0074B7; */
-}
-
-.color2 {
-  background-color: #ffffff;
-  /* background-color: #0074B7; */
-}
-
 .icon {
   transition: transform 0.3s ease-in-out;
   width: auto;
   height: 50px;
-
 }
 
 .icon-container:hover .icon {
-  transform: scale(1.2)
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* transform: translateY(1000px); */
+  }
+
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in
 }
 </style>

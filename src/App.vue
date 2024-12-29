@@ -1,11 +1,11 @@
 <script setup>
 import HomePageView from './views/HomePageView.vue'
-import NavBar from './components/NavBar.vue'
+// import NavBar from './components/NavBar.vue'
 
 </script>
 <template>
-  <div class="background nav-color flex justify-left stick text-black">
-    <NavBar/>
+  <div class="background nav-color">
+    <!-- <NavBar/> -->
   </div>
   <HomePageView />
 </template>
@@ -21,6 +21,6 @@ import NavBar from './components/NavBar.vue'
 }
 
 .nav-color {
-  background-color: #242729;
+  background-color: #1f2122;
 }
 </style>
