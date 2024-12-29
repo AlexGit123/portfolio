@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center">
-        <img class="rounded w-9/12 max-h-auto" :src="getImageURL()">
+        <img rel="preload" class="border border-indigo-400 rounded-lg w-9/12 max-h-auto" :src="getImageURL()">
     </div>
 </template>
 <script>

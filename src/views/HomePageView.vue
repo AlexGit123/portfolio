@@ -1,79 +1,59 @@
 <template>
-    <div class="background flex justify-center p-10">
-        <div class="min-h-screen w-full">
+    <div class="background flex justify-center p-2">
+        <div class="min-h-screen w-full font">
             <div id="gradient"
-                class="gradient h-1/2 border border-blue-600 rounded-md flex flex-col items-center justify-center">
-                <template v-if="!currentComponent">
-                    <svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
+                class="relative h-full md:max-h-screen flex flex-col items-center justify-center text-white p-4">
 
-                        <!-- Character: 'a' -->
-                        <g id="char-a" transform="translate(30, 30)">
-                            <circle id="a-dot1" class="dot filled" cx="15" cy="15" r="15" />
-                            <circle id="a-dot2" class="dot" cx="15" cy="75" r="15" />
-                            <circle id="a-dot3" class="dot" cx="15" cy="135" r="15" />
-                            <circle id="a-dot4" class="dot" cx="75" cy="15" r="15" />
-                            <circle id="a-dot5" class="dot" cx="75" cy="75" r="15" />
-                            <circle id="a-dot6" class="dot" cx="75" cy="135" r="15" />
-                        </g>
 
-                        <!-- Character: 'l' -->
-                        <g id="char-l" transform="translate(150, 30)">
-                            <circle id="l-dot1" class="dot filled" cx="15" cy="15" r="15" />
-                            <circle id="l-dot2" class="dot filled" cx="15" cy="75" r="15" />
-                            <circle id="l-dot3" class="dot filled" cx="15" cy="135" r="15" />
-                            <circle id="l-dot4" class="dot" cx="75" cy="15" r="15" />
-                            <circle id="l-dot5" class="dot" cx="75" cy="75" r="15" />
-                            <circle id="l-dot6" class="dot" cx="75" cy="135" r="15" />
-                        </g>
+                <spline-viewer url="https://prod.spline.design/Dn-lLJkN7oUKiFXZ/scene.splinecode"
+                    class=""></spline-viewer>
+                <div class="absolute text-5xl backdrop-filter backdrop-blur-sm p-10 pointer-events-none rounded-lg">
+                    <br>
+                    Welcome to my Portfolio
+                </div>
 
-                        <!-- Character: 'e' -->
-                        <g id="char-e" transform="translate(270, 30)">
-                            <circle id="e-dot1" class="dot filled" cx="15" cy="15" r="15" />
-                            <circle id="e-dot2" class="dot" cx="15" cy="75" r="15" />
-                            <circle id="e-dot3" class="dot" cx="15" cy="135" r="15" />
-                            <circle id="e-dot4" class="dot" cx="75" cy="15" r="15" />
-                            <circle id="e-dot5" class="dot filled" cx="75" cy="75" r="15" />
-                            <circle id="e-dot6" class="dot" cx="75" cy="135" r="15" />
-                        </g>
-
-                        <!-- Character: 'x' -->
-                        <g id="char-x" transform="translate(390, 30)">
-                            <circle id="x-dot1" class="dot filled" cx="15" cy="15" r="15" />
-                            <circle id="x-dot2" class="dot" cx="15" cy="75" r="15" />
-                            <circle id="x-dot3" class="dot filled" cx="15" cy="135" r="15" />
-                            <circle id="x-dot4" class="dot filled" cx="75" cy="15" r="15" />
-                            <circle id="x-dot5" class="dot" cx="75" cy="75" r="15" />
-                            <circle id="x-dot6" class="dot filled" cx="75" cy="135" r="15" />
-                        </g>
-                    </svg>
-                </template>
+                <!-- 
                 <template v-else>
                     <component :is="currentComponent" />
-                </template>
+                </template> -->
             </div>
-            <div class="w-full flex flex-col pt-10">
+            <div class="min-h-screen">
+                <HomeView />
+            </div>
+            <div class="min-h-screen">
+                <ProjectsView />
+            </div>
+            <div class="min-h-screen">
+                <ExperienceView />
+            </div>
+            <div class="min-h-screen">
+                <ContactView />
+            </div>
+            <!-- <div class="w-full flex flex-col pt-10">
                 <div class="text-right text-white flex flex-col items-end">
                     <button @click="currentComponent = 'HomeView'" class="font pb-2">ABOUT</button>
                     <button @click="currentComponent = 'ProjectsView'" class="font pb-2">PROJECTS</button>
                     <button @click="currentComponent = 'ExperienceView'" class="font pb-2">EXPERIENCE</button>
                     <button @click="currentComponent = 'ContactView'" class="font pb-2">CONTACT</button>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 <script>
 import HomeView from './HomeView.vue';
+// import HomePageView from './HomePageView.vue';
+
 import ProjectsView from './ProjectsView.vue';
-import NavBar from '../components/NavBar.vue';
+// import NavBar from '../components/NavBar.vue';
 import ExperienceView from './ExperienceView.vue';
 import ContactView from './ContactView.vue';
-
+import { Application } from '@splinetool/runtime';
 export default {
     components: {
         HomeView,
         ProjectsView,
-        NavBar,
+        // NavBar,
         ExperienceView,
         ContactView,
     },
@@ -91,6 +71,9 @@ export default {
         },
     },
     mounted() {
+        const canvas = document.getElementById('canvas3d');
+        const app = new Application(canvas);
+        app.load('https://prod.spline.design/nNL39Pb-MQn2saue/scene.splinecode');
     }
 };
 </script>
@@ -106,12 +89,14 @@ export default {
 }
 
 .gradient {
-    /* background: linear-gradient(90deg, #4b4747 0%, #e3dcdf 100%); */
     background: linear-gradient(90deg, #939191 0%, #9a9b9c 100%);
 }
 
 .background {
-    background-color: #242729;
+    /* background-color: #1f2122; */
+    background-color: black;
+    /* background: linear-gradient(90deg, #bbb6b6 0%, #181a1b 100%); */
+
 }
 
 .dot {
@@ -120,7 +105,7 @@ export default {
 
 .filled {
     opacity: 0;
-    fill: black;
+    fill: white;
     animation: fadeIn 1s forwards;
 }
 
@@ -146,4 +131,21 @@ export default {
     }
 }
 
+.matcap-effect {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 30% 30%,
+            rgba(158, 129, 129, 0.9),
+            /* Highlight */
+            rgba(158, 129, 129, 0.5) 40%,
+            /* Matte tone */
+            rgba(158, 129, 129, 0.7) 70%,
+            /* Mid tone */
+            rgba(0, 0, 0, 0.3) 100%
+            /* Darker edge */
+        );
+    /* border-radius: 50%; */
+    filter: blur(0.3px);
+    /* Slightly softens the gradient */
+}
 </style>

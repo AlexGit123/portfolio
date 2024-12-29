@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full p-10">
+    <div class="w-full p-10 text-white">
         <h1 class="text-4xl">Experience</h1>
     </div>
     <div class="grid grid-cols-2 pb-40">
-        <div class="pl-10">
+        <div class="pl-10 text-white">
             <div class="flex space-x-4">
                 <h1 class="text-2xl">Software Engineer</h1>
                 <h1 class="pt-2">Joint Research Center Zeeland</h1>
@@ -14,7 +14,7 @@
                     learning experience for education purposes.</p>
             </div>
         </div>
-        <div class="pr-10">
+        <div class="pr-10 text-white">
             <div class="flex space-x-4">
                 <h1 class="text-2xl">Full-Stack Developer</h1>
                 <h1 class="pt-2">Digital Workstore</h1>
