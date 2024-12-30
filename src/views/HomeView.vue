@@ -1,18 +1,15 @@
 <script>
-// import RandText from '../components/RandText.vue'
 export default {
-  components: {
-
-  },
+  components: {},
   data() {
     return {
       name: "I'm Alex",
       welcomeMessage:
         "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
-      subTitle: "Full-Stack Software Engineer"
-    };
-  },
-};
+      subTitle: 'Full-Stack Software Engineer'
+    }
+  }
+}
 </script>
 <template>
   <!-- <div class="flex flex-wrap"> -->
@@ -24,16 +21,12 @@ export default {
           <div>
             <p class="font-extrabold text-8xl mb-2">Hi,</p>
           </div>
-          <div class="flex justify-end w-full">
-            <div class="border rounded-full w-24 h-24 flex items-center justify-center">
-              <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full">
-            </div>
-          </div>
         </div>
         <p class="text-2xl mt-4">I'm Alex</p>
         <p class="text-2xl mt-4">
-          I'm a Software Engineer with a passion for building web applications, crafting designs, and learning
-          new technologies. I'm most familiar with Vue, Django, Laravel, JavaScript, Python, and PHP.
+          I'm a Software Engineer with a passion for building web applications, crafting designs,
+          and learning new technologies. I'm most familiar with Vue, Django, Laravel, JavaScript,
+          Python, and PHP.
         </p>
       </div>
     </div>
@@ -41,22 +34,29 @@ export default {
     <!-- Right side content -->
     <div class="flex flex-col items-center justify-center">
       <div class="flex text-center space-x-5">
+        <div class="flex">
+          <div class="border rounded-full w-24 h-24 flex items-center justify-center">
+            <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full" />
+          </div>
+        </div>
         <a href="https://github.com/AlexGit123" class="icon-container text-sm text-gray-500">
-          <img class="icon" src="@/assets/github1.svg" alt="GitHub">
+          <img class="icon" src="@/assets/github1.svg" alt="GitHub" />
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/alex-doerfer-a004611b7/" class="icon-container text-sm text-gray-500">
-          <img class="icon" src="@/assets/linkedin.svg" alt="LinkedIn">
+        <a
+          href="https://www.linkedin.com/in/alex-doerfer-a004611b7/"
+          class="icon-container text-sm text-gray-500"
+        >
+          <img class="icon" src="@/assets/linkedin.svg" alt="LinkedIn" />
           LinkedIn
         </a>
         <a href="#" class="icon-container text-sm text-gray-500">
-          <img class="icon" src="@/assets/download.svg" alt="CV">
+          <img class="icon" src="@/assets/download.svg" alt="CV" />
           CV
         </a>
       </div>
     </div>
   </div>
-
 </template>
 <style scoped>
 .icon {
@@ -82,6 +82,6 @@ export default {
 }
 
 .animate-fade-in {
-  animation: fadeIn 1s ease-in
+  animation: fadeIn 1s ease-in;
 }
 </style>
