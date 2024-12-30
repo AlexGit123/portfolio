@@ -9,14 +9,11 @@
           url="https://prod.spline.design/Dn-lLJkN7oUKiFXZ/scene.splinecode"
           ref="splineViewer"
         ></spline-viewer>
-        <div class="absolute text-5xl backdrop-filter backdrop-blur-sm p-10 rounded-lg">
+        <div
+          class="absolute text-5xl backdrop-filter backdrop-blur-sm p-10 rounded-lg pointer-events-none"
+        >
           Welcome to my Portfolio
         </div>
-
-        <!-- 
-                <template v-else>
-                    <component :is="currentComponent" />
-                </template> -->
       </div>
       <div class="min-h-screen">
         <HomeView />
@@ -30,14 +27,6 @@
       <div class="min-h-screen">
         <ContactView />
       </div>
-      <!-- <div class="w-full flex flex-col pt-10">
-                <div class="text-right text-white flex flex-col items-end">
-                    <button @click="currentComponent = 'HomeView'" class="font pb-2">ABOUT</button>
-                    <button @click="currentComponent = 'ProjectsView'" class="font pb-2">PROJECTS</button>
-                    <button @click="currentComponent = 'ExperienceView'" class="font pb-2">EXPERIENCE</button>
-                    <button @click="currentComponent = 'ContactView'" class="font pb-2">CONTACT</button>
-                </div>
-            </div> -->
     </div>
   </div>
 </template>
@@ -89,10 +78,6 @@ export default {
 
 .font {
   font-family: 'Geneva', sans-serif;
-}
-
-.gradient {
-  background: linear-gradient(90deg, #939191 0%, #9a9b9c 100%);
 }
 
 .background {
