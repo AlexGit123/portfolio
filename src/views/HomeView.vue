@@ -8,12 +8,12 @@ export default {
         "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
       subTitle: 'Full-Stack Software Engineer'
     }
-  }
+  },
 }
 </script>
 <template>
   <!-- <div class="flex flex-wrap"> -->
-  <div class="grid grid-cols-2 gap-2 animate-fade-in min-h-screen items-center">
+  <div class="animate-fade-in min-h-screen items-center p-44">
     <!-- Left side content -->
     <div class="flex flex-col items-center justify-center pl-10 text-white">
       <div class="w-full">
@@ -21,24 +21,26 @@ export default {
           <div>
             <p class="font-extrabold text-8xl mb-2">Hi,</p>
           </div>
+          <div class="flex ml-auto">
+            <div class="border rounded-full w-24 h-24 flex items-center justify-center">
+              <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full" />
+            </div>
+          </div>
         </div>
-        <p class="text-2xl mt-4">I'm Alex</p>
-        <p class="text-2xl mt-4">
-          I'm a Software Engineer with a passion for building web applications, crafting designs,
-          and learning new technologies. I'm most familiar with Vue, Django, Laravel, JavaScript,
-          Python, and PHP.
-        </p>
+        <p>I'm Alex</p>
+        <div class="text-2xl mt-4 text-gray-500">
+          <p>
+            I'm a Software Engineer with a passion for building web applications, crafting designs,
+            and learning new technologies. I'm most familiar with Vue, Django, Laravel, JavaScript,
+            Python, and PHP.
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- Right side content -->
-    <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center justify-center pt-20">
       <div class="flex text-center space-x-5">
-        <div class="flex">
-          <div class="border rounded-full w-24 h-24 flex items-center justify-center">
-            <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full" />
-          </div>
-        </div>
         <a href="https://github.com/AlexGit123" class="icon-container text-sm text-gray-500">
           <img class="icon" src="@/assets/github1.svg" alt="GitHub" />
           GitHub

@@ -2,14 +2,14 @@
     <div class="w-full p-10 text-white">
         <h1 class="text-4xl">Experience</h1>
     </div>
-    <div class="grid grid-cols-2 pb-40">
+    <div class="grid grid-cols-2">
         <div class="pl-10 text-white">
             <div class="flex space-x-4">
                 <h1 class="text-2xl">Software Engineer</h1>
                 <h1 class="pt-2">Joint Research Center Zeeland</h1>
             </div>
             <h1>Internship 2024</h1>
-            <div class="pt-4">
+            <div class="pt-4 pr-10">
                 <p>Developed the Digital Anatomy application using Unreal Engine and a Django web-app to create a
                     learning experience for education purposes.</p>
             </div>

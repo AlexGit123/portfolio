@@ -24,9 +24,9 @@
       <div class="min-h-screen">
         <ExperienceView />
       </div>
-      <div class="min-h-screen">
+      <!-- <div class="min-h-screen">
         <ContactView />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -34,13 +34,11 @@
 import HomeView from './HomeView.vue'
 import ProjectsView from './ProjectsView.vue'
 import ExperienceView from './ExperienceView.vue'
-import ContactView from './ContactView.vue'
 export default {
   components: {
     HomeView,
     ProjectsView,
     ExperienceView,
-    ContactView
   },
   data() {
     return {
@@ -56,7 +54,9 @@ export default {
     }
   },
   mounted() {
-    const splineViewer = this.$refs.splineViewer
+    let splineViewer = this.$refs.splineViewer
+
+    // splineViewer._logo.remove()
 
     if (splineViewer) {
       // event => listen for scroll
@@ -72,32 +72,11 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Geneva&display=swap');
 
-.title {
-  font-size: 600%;
-}
-
 .font {
   font-family: 'Geneva', sans-serif;
 }
 
 .background {
-  /* background-color: #1f2122; */
   background-color: black;
-  /* background: linear-gradient(90deg, #bbb6b6 0%, #181a1b 100%); */
-}
-
-.matcap-effect {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(158, 129, 129, 0.9),
-    /* Highlight */ rgba(158, 129, 129, 0.5) 40%,
-    /* Matte tone */ rgba(158, 129, 129, 0.7) 70%,
-    /* Mid tone */ rgba(0, 0, 0, 0.3) 100% /* Darker edge */
-  );
-  /* border-radius: 50%; */
-  filter: blur(0.3px);
-  /* Slightly softens the gradient */
 }
 </style>
