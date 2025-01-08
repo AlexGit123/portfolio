@@ -38,7 +38,7 @@ export default {
   components: {
     HomeView,
     ProjectsView,
-    ExperienceView,
+    ExperienceView
   },
   data() {
     return {
@@ -71,7 +71,6 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Geneva&display=swap');
-
 .font {
   font-family: 'Geneva', sans-serif;
 }

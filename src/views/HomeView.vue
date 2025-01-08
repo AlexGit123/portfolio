@@ -22,8 +22,8 @@ export default {
             <p class="font-extrabold text-8xl mb-2">Hi,</p>
           </div>
           <div class="flex ml-auto">
-            <div class="border rounded-full w-24 h-24 flex items-center justify-center">
-              <img src="@/assets/me.jpg" class="w-15 h-20 rounded-full" />
+            <div class="border rounded-full w-24 h-24 flex items-center justify-center bg-blue-300">
+              <img src="@/assets/me.png" class="w-20 h-20 rounded-full" />
             </div>
           </div>
         </div>
