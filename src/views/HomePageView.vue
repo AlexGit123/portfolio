@@ -3,7 +3,7 @@
     <div class="min-h-screen w-full font">
       <div
         id="gradient"
-        class="relative h-full md:max-h-screen flex flex-col items-center justify-center text-white p-4"
+        class="relative h-full md:max-h-screen flex flex-col items-center justify-center text-white p-40"
       >
         <spline-viewer
           url="https://prod.spline.design/Dn-lLJkN7oUKiFXZ/scene.splinecode"
@@ -15,18 +15,18 @@
           Welcome to my Portfolio
         </div>
       </div>
-      <div class="min-h-screen">
+      <div class="">
         <HomeView />
       </div>
-      <div class="min-h-screen">
+      <div class="">
         <ProjectsView />
       </div>
-      <div class="min-h-screen">
+      <div class="pt-20 pb-20">
         <ExperienceView />
       </div>
-      <!-- <div class="min-h-screen">
+      <div class="">
         <ContactView />
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -34,11 +34,13 @@
 import HomeView from './HomeView.vue'
 import ProjectsView from './ProjectsView.vue'
 import ExperienceView from './ExperienceView.vue'
+import ContactView from './ContactView.vue'
 export default {
   components: {
     HomeView,
     ProjectsView,
-    ExperienceView
+    ExperienceView,
+    ContactView
   },
   data() {
     return {

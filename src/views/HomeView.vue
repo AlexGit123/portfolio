@@ -13,7 +13,7 @@ export default {
 </script>
 <template>
   <!-- <div class="flex flex-wrap"> -->
-  <div class="animate-fade-in min-h-screen items-center p-44">
+  <div class="items-center pl-44 pr-44 pb-32">
     <!-- Left side content -->
     <div class="flex flex-col items-center justify-center pl-10 text-white">
       <div class="w-full">
@@ -37,7 +37,6 @@ export default {
         </div>
       </div>
     </div>
-
     <!-- Right side content -->
     <div class="flex flex-col items-center justify-center pt-20">
       <div class="flex text-center space-x-5">
