@@ -5,7 +5,7 @@
     <div class="grid grid-cols-[auto_1fr_1fr_auto] gap-6">
 
       <!-- first col -->
-      <div class="pl-2 pr-10 flex flex-col">
+      <div class="flex flex-col">
         <div class="flex pb-4 space-x-4 justify-center items-center h-full">
           <div class="relative group cursor-pointer">
             <!-- circle -->
@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="pl-2 pr-10 flex flex-col">
+      <div class="flex flex-col">
         <div class="flex pb-4 space-x-4 justify-center items-center h-full">
           <div class="relative group cursor-pointer">
             <!-- circle -->
