@@ -58,7 +58,7 @@ export default {
   mounted() {
     let splineViewer = this.$refs.splineViewer
 
-    // splineViewer._logo.remove()
+    splineViewer._logo.remove()
 
     if (splineViewer) {
       // event => listen for scroll
