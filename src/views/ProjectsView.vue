@@ -3,7 +3,6 @@
   <div class="w-full p-4 animate-fade-in text-white">
     <h1 class="text-4xl pl-10">Projects</h1>
     <div class="grid grid-cols-[auto_1fr_1fr_auto] gap-6">
-
       <!-- first col -->
       <div class="flex flex-col">
         <div class="flex pb-4 space-x-4 justify-center items-center h-full">
@@ -14,10 +13,7 @@
               v-on:click="handleBackClick()"
             ></div>
             <!-- arrow -->
-            <div
-              class="w-10 h-10 flex items-center justify-center"
-              v-on:click="handleBackClick()"
-            >
+            <div class="w-10 h-10 flex items-center justify-center" v-on:click="handleBackClick()">
               <img class="z-10" src="@/assets/arrow_back.svg" />
             </div>
           </div>
@@ -26,7 +22,15 @@
 
       <!-- second col -->
       <div class="pt-4">
-        <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
+        <div class="flex flex-row space-x-2 items-center">
+          <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
+          <div v-if="getProjectById(selectedProjectId).githubLink">
+            <a :href="getProjectById(selectedProjectId).githubLink">
+              <img class="w-6 h-auto" src="@/assets/github1.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
         <p class="mt-2 text-lg">{{ getProjectById(selectedProjectId).description }}</p>
       </div>
 
@@ -96,7 +100,7 @@ export default {
           title: 'Portfolio',
           description:
             'This is the website you are currently visiting. It is built with Vue and Tailwind! I am making continuous improvements to the design so stay tuned.',
-          githubLink: '',
+          githubLink: 'https://github.com/AlexGit123/portfolio',
           img: 'portfolioimg1.png'
         },
         {
