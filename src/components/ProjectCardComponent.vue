@@ -1,6 +1,7 @@
 <template>
   <div class="flex justify-center">
     <img
+      rel="preload"
       loading="eager"
       class="border border-indigo-400 rounded-lg max-h-auto"
       :src="getImageURL()"
@@ -26,12 +27,4 @@ export default {
   }
 }
 </script>
-<style scoped>
-.text-color {
-  color: #7fbdec;
-}
-
-.square-color1 {
-  background-color: #daddd8;
-}
-</style>
+<style scoped></style>
