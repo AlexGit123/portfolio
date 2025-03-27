@@ -8,13 +8,12 @@ export default {
         "Recent HBO-ICT international graduate at HZ University of Applied Sciences. I'm a Software Engineer with a passion for building web applications. Let's work.",
       subTitle: 'Full-Stack Software Engineer'
     }
-  },
+  }
 }
 </script>
 <template>
-  <!-- <div class="flex flex-wrap"> -->
   <div class="items-center pl-44 pr-44 pb-32">
-    <!-- Left side content -->
+    <!-- top content -->
     <div class="flex flex-col items-center justify-center pl-10 text-white">
       <div class="w-full">
         <div class="flex items-center">
@@ -37,7 +36,7 @@ export default {
         </div>
       </div>
     </div>
-    <!-- Right side content -->
+    <!-- bottom content -->
     <div class="flex flex-col items-center justify-center pt-20">
       <div class="flex text-center space-x-5">
         <a href="https://github.com/AlexGit123" class="icon-container text-sm text-gray-500">

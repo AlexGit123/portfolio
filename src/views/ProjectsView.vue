@@ -108,7 +108,7 @@ export default {
           title: 'Digital Anatomy',
           description:
             'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with an e-learning/teaching tool. It was built with Unreal Engine and the web-based e-tool was made with Django',
-          githubLink: '',
+          githubLink: 'https://github.com/jrcz-data-science-lab/Virtual-Anatomy-UE',
           img: 'digital_anatomy1.png'
         },
         {
@@ -118,13 +118,6 @@ export default {
           githubLink: '',
           img: 'portfolioimg.png'
         },
-        {
-          id: 4,
-          title: 'YourSurpise',
-          description: 'In progress',
-          githubLink: '',
-          img: 'portfolioimg.png'
-        }
       ],
       selectedProjectId: 1
     }
