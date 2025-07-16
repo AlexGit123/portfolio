@@ -24,7 +24,7 @@
       <div class="pt-4">
         <div class="flex flex-row space-x-2 items-center">
           <p class="text-2xl">{{ getProjectById(selectedProjectId).title }}</p>
-          <div v-if="getProjectById(selectedProjectId).githubLink">
+          <div v-if="getProjectById(selectedProjectId).githubLink" class="">
             <a :href="getProjectById(selectedProjectId).githubLink">
               <img class="w-6 h-auto" src="@/assets/github1.svg" alt="GitHub" />
             </a>
@@ -99,7 +99,7 @@ export default {
           id: 1,
           title: 'Portfolio',
           description:
-            'This is the website you are currently visiting. It is built with Vue and Tailwind! I am making continuous improvements to the design so stay tuned.',
+            'This is the website you are currently visiting. It is built with Vue and Tailwind. I am making continuous improvements to the design so stay tuned.',
           githubLink: 'https://github.com/AlexGit123/portfolio',
           img: 'portfolioimg1.png'
         },
@@ -110,13 +110,6 @@ export default {
             'The Digital Anatomy project focused on creating an interactive experience for learners and providing educators with an e-learning/teaching tool. It was built with Unreal Engine and the web-based e-tool was made with Django',
           githubLink: 'https://github.com/jrcz-data-science-lab/Virtual-Anatomy-UE',
           img: 'digital_anatomy1.png'
-        },
-        {
-          id: 3,
-          title: 'IMDB Movies',
-          description: 'In progress',
-          githubLink: '',
-          img: 'portfolioimg.png'
         },
       ],
       selectedProjectId: 1
