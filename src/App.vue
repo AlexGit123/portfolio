@@ -4,7 +4,7 @@ import NavBar from './components/NavBar.vue'
 import { onMounted } from 'vue'
 import ContactView from './views/ContactView.vue'
 
-function randomWindowPosition(min, max): number {
+function randomWindowPosition(min: number, max: number): number {
   return Math.random() * (max - min) + min
 }
 
