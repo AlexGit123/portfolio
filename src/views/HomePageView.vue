@@ -14,7 +14,7 @@
             <div class="text-md text-white">
               <p class="">
                 I'm a Software Engineer with a passion for building web applications, crafting
-                designs, and learning new technologies. I'm most familiar with Vue, Django, Laravel,
+                designs, and learning new technologies. I'm most familiar with Angluar, Vue, Django, Laravel,
                 JavaScript, Python, and PHP.
               </p>
               <p class="pt-4 text-slate-700">
@@ -43,9 +43,9 @@
                 <div class="flex flex-col">
                   <p class="pt-2 pb-2 font-bold">FLIX IT</p>
                   <p class="pb-2">
-                    This project enables 3D exploration of human anatomy. I developed a coupled
-                    web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
-                    allow educators to create assignments for their students.
+                    FLIX IT is a responsive movie browsing application built with Vue, Go, and
+                    Tailwind CSS, allowing users to search and explore movies using data from the
+                    OMDb API.
                   </p>
                 </div>
               </div>
@@ -67,10 +67,15 @@
         <div>
           <p class="font-extrabold text-2xl gradient mb-2">Skills</p>
           <div class="pl-4 bg-gray-700/80 w-full rounded-md p-2">
+            <p class="pb-2">
+              I’m comfortable working across the full stack, with a strong focus on frontend
+              development. Currently, my day-to-day work revolves around Angluar, TypeScript, and CSS,
+              but I also enjoy building and maintaining backend services.
+            </p>
             <p>
-              This project enables 3D exploration of human anatomy. I developed a coupled web-app
-              made with Django, HTMX and Tailwind with Unreal Engine Blueprints to allow educators
-              to create assignments for their students.
+              I’ve worked with Django, Laravel, and Go on the backend, and I like thinking about
+              clean architecture, usability, and performance. I’m always curious to learn new tools
+              and improve the way things are built.
             </p>
           </div>
         </div>
