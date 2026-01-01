@@ -2,7 +2,7 @@
 import HomePageView from './views/HomePageView.vue'
 import NavBar from './components/NavBar.vue'
 import { onMounted } from 'vue'
-import ContactView from './views/ContactView.vue'
+import FooterView from './views/FooterView.vue'
 
 function randomWindowPosition(min: number, max: number): number {
   return Math.random() * (max - min) + min
@@ -14,8 +14,6 @@ function getBlobs(): void {
   for (let blob of blobs) {
     let posX = randomWindowPosition(0, window.innerWidth - 90)
     let posY = randomWindowPosition(0, window.innerHeight - 90)
-
-    // console.log(posX, posY)
 
     blob.style.top = `${posX}px`
     blob.style.left = `${posY}px`
@@ -36,7 +34,7 @@ onMounted(() => {
       <NavBar />
     </div>
   </div>
-  <ContactView></ContactView>
+  <FooterView></FooterView>
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
@@ -54,6 +52,7 @@ onMounted(() => {
   min-width: 0;
   padding-right: 1rem;
   z-index: 100;
+  padding-left: 50px;
 }
 
 .sidebar-container {
@@ -91,8 +90,8 @@ onMounted(() => {
 }
 
 .blob {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   background: radial-gradient(circle at 30% 30%, #ec9396, #f6416c);
   mix-blend-mode: screen;
   opacity: 60%;

@@ -47,7 +47,6 @@ export default {
   padding: 1rem 0.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  /* Enhanced shadow for right-side positioning */
   box-shadow: -4px 8px 32px rgba(0, 0, 0, 0.25);
 }
 
@@ -131,7 +130,6 @@ export default {
   transform: scale(1.1);
 }
 
-/* Slide in animation from the right */
 .compact-sidebar {
   animation: slideInFromRight 0.3s ease-out;
 }
@@ -147,7 +145,6 @@ export default {
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .compact-sidebar {
     width: 60px;
@@ -177,7 +174,6 @@ export default {
   }
 }
 
-/* Optional: Add subtle pulse animation for better visibility */
 .compact-sidebar:hover {
   transform: scale(1.02);
   transition: transform 0.2s ease;

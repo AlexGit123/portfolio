@@ -14,8 +14,8 @@
             <div class="text-md text-white">
               <p class="">
                 I'm a Software Engineer with a passion for building web applications, crafting
-                designs, and learning new technologies. I'm most familiar with Angluar, Vue, Django, Laravel,
-                JavaScript, Python, and PHP.
+                designs, and learning new technologies. I'm most familiar with Angluar, Vue, Django,
+                Laravel, JavaScript, Python, and PHP.
               </p>
               <p class="pt-4 text-slate-700">
                 When I'm not coding you can find me at the gym, playing games, or out with friends.
@@ -27,19 +27,10 @@
         <!-- projects -->
         <div>
           <p class="font-extrabold text-2xl mb-2 gradient">Projects</p>
+
           <div class="bg-gray-700/80 rounded-md p-2">
-            <div class="space-y-4 pt-2 h-full">
-              <div class="pl-4 bg-gray-800 w-full rounded-md">
-                <div class="flex flex-col">
-                  <p class="pt-2 pb-2 font-bold">Digital Anatomy</p>
-                  <p class="pb-2">
-                    This project enables 3D exploration of human anatomy. I developed a coupled
-                    web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
-                    allow educators to create assignments for their students.
-                  </p>
-                </div>
-              </div>
-              <div class="pl-4 bg-gray-800 w-full rounded-md">
+            <div class="space-y-4 pt-2 pb-2 h-full">
+              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
                 <div class="flex flex-col">
                   <p class="pt-2 pb-2 font-bold">FLIX IT</p>
                   <p class="pb-2">
@@ -49,13 +40,24 @@
                   </p>
                 </div>
               </div>
-              <div class="pl-4 bg-gray-800 w-full rounded-md">
+
+              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
                 <div class="flex flex-col">
                   <p class="pt-2 pb-2 font-bold">Portfolio</p>
                   <p class="pb-2">
                     This website is made with Vue, Tailwind CSS, and plain CSS. I built it to show
-                    case some projects I've worked on and I plan to use it for more experimental
-                    designs.
+                    case some projects I've worked on and will be used to experiment with designs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
+                <div class="flex flex-col">
+                  <p class="pt-2 pb-2 font-bold">Digital Anatomy</p>
+                  <p class="pb-2">
+                    This project enables 3D exploration of human anatomy. I developed a coupled
+                    web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
+                    allow educators to create assignments for their students.
                   </p>
                 </div>
               </div>
@@ -69,8 +71,8 @@
           <div class="pl-4 bg-gray-700/80 w-full rounded-md p-2">
             <p class="pb-2">
               I’m comfortable working across the full stack, with a strong focus on frontend
-              development. Currently, my day-to-day work revolves around Angluar, TypeScript, and CSS,
-              but I also enjoy building and maintaining backend services.
+              development. Currently, my day-to-day work revolves around Angluar, TypeScript, and
+              CSS, but I also enjoy building and maintaining backend services.
             </p>
             <p>
               I’ve worked with Django, Laravel, and Go on the backend, and I like thinking about
