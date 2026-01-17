@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[rgb(19,21,41)]/10 flex justify-center p-2 rounded-md w-10/12 backdrop-blur-md h-full"
+    class="bg-[rgb(19,21,41)]/40 flex justify-center p-2 rounded-md backdrop-blur-md h-full"
   >
     <div class="p-1">
       <div class="content grid gap-4 w-3/4 p-2 h-auto">
