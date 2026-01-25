@@ -3,32 +3,16 @@ import HomePageView from './views/HomePageView.vue'
 import NavBar from './components/NavBar.vue'
 import { onMounted } from 'vue'
 import FooterView from './views/FooterView.vue'
-
-// function randomWindowPosition(min: number, max: number): number {
-//   return Math.random() * (max - min) + min
-// }
-
-// function getBlobs(): void {
-//   const blobs = Array.from(document.getElementsByClassName('blob') as HTMLCollectionOf<HTMLElement>)
-
-//   for (let blob of blobs) {
-//     let posX = randomWindowPosition(0, window.innerWidth - 90)
-//     let posY = randomWindowPosition(0, window.innerHeight - 90)
-
-//     blob.style.top = `${posX}px`
-//     blob.style.left = `${posY}px`
-//   }
-// }
 onMounted(() => {})
 </script>
 <template>
   <div class="app-container">
-         <div class="blob"></div>
-         <div class="blob1"></div>
-         <div class="blob2"></div>
-         <div class="blob3"></div>
+    <div class="blob"></div>
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="blob3"></div>
 
-    <div class="main-content">
+    <div class="main-content main-content__ani">
       <HomePageView />
     </div>
 
@@ -102,7 +86,7 @@ onMounted(() => {})
   position: fixed;
   z-index: 0;
   top: 300px;
-  left:-90px;
+  left: -90px;
 }
 
 .blob1 {
@@ -162,6 +146,21 @@ onMounted(() => {})
   }
   100% {
     border-radius: 55% 45% 60% 40% / 60% 40% 55% 45%;
+  }
+}
+
+.main-content__ani {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>

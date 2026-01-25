@@ -38,7 +38,14 @@
 
               <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
                 <div class="flex flex-col text-white">
-                  <p class="pt-2 pb-2 font-bold">Portfolio</p>
+                  <div class="flex justify-between items-center pt-2 pb-2">
+                    <p class="font-bold">Portfolio</p>
+                    <a href="https://github.com/AlexGit123/portfolio">
+                      <button class="text-sm rounded-xl font-thin border p-1 h-8">
+                        GitHub Repo
+                      </button>
+                    </a>
+                  </div>
                   <p class="pb-2 text-gray-300">
                     This website is made with Vue, Tailwind CSS, and plain CSS. I built it to show
                     case some projects I've worked on and will be used to experiment with designs.
@@ -48,7 +55,15 @@
 
               <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
                 <div class="flex flex-col text-white">
-                  <p class="pt-2 pb-2 font-bold">Digital Anatomy</p>
+                  <div class="flex justify-between items-center pt-2 pb-2 align-middle">
+                    <p class="font-bold">Digital Anatomy</p>
+                    <a href="https://github.com/jrcz-data-science-lab/Virtual-Anatomy-UE">
+                      <button class="text-sm rounded-xl font-thin border p-1 h-8">
+                        GitHub Repo
+                      </button>
+                    </a>
+                  </div>
+
                   <p class="pb-2 text-gray-300">
                     This project enables 3D exploration of human anatomy. I developed a coupled
                     web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
