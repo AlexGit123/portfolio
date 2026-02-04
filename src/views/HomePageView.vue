@@ -12,8 +12,7 @@
             <div class="text-md">
               <p class="text-gray-300">
                 I'm a Software Engineer with a passion for building web applications, crafting
-                designs, and learning new technologies. I'm most familiar with Angluar, Vue, Django,
-                Laravel, JavaScript, Python, and PHP.
+                designs, and learning new technologies.
               </p>
             </div>
           </div>
@@ -41,14 +40,17 @@
                   <div class="flex justify-between items-center pt-2 pb-2">
                     <p class="font-bold">Portfolio</p>
                     <a href="https://github.com/AlexGit123/portfolio">
-                      <button class="text-sm rounded-xl font-thin border p-1 h-8">
+                      <button
+                        class="text-sm rounded-xl font-thin border p-1 h-8 bg-gray-800/50 border-transparent text-gray-300 hover:bg-gray-700/75 hover:border-gray-600/20 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+                      >
                         GitHub Repo
                       </button>
                     </a>
                   </div>
                   <p class="pb-2 text-gray-300">
-                    This website is made with Vue, Tailwind CSS, and plain CSS. I built it to show
-                    case some projects I've worked on and will be used to experiment with designs.
+                    This website is made with HTML, Tailwind CSS, and some plain CSS. I built it to
+                    show case some projects I've worked on and it will also be used to experiment
+                    with designs.
                   </p>
                 </div>
               </div>
@@ -58,7 +60,9 @@
                   <div class="flex justify-between items-center pt-2 pb-2 align-middle">
                     <p class="font-bold">Digital Anatomy</p>
                     <a href="https://github.com/jrcz-data-science-lab/Virtual-Anatomy-UE">
-                      <button class="text-sm rounded-xl font-thin border p-1 h-8">
+                      <button
+                        class="text-sm rounded-xl font-thin border p-1 h-8 bg-gray-800/50 border-transparent text-gray-300 hover:bg-gray-700/75 hover:border-gray-600/20 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+                      >
                         GitHub Repo
                       </button>
                     </a>
@@ -80,14 +84,13 @@
           <p class="font-extrabold text-2xl gradient mb-2">Skills</p>
           <div class="pl-4 bg-gray-700/80 w-full rounded-md p-2 text-gray-300">
             <p class="pb-2">
-              I’m comfortable working across the full stack, with a strong focus on frontend
-              development. Currently, my day-to-day work revolves around Angluar, TypeScript, and
-              CSS, but I also enjoy building and maintaining backend services.
+              I’m comfortable working across the full stack, with a focus on frontend development.
+              Currently, my day-to-day work revolves around Angular, TypeScript, and CSS, but I also
+              enjoy building and maintaining backend services.
             </p>
             <p>
-              I’ve worked with Django, Laravel, and Go on the backend, and I like thinking about
-              clean architecture, usability, and performance. I’m always curious to learn new tools
-              and improve the way things are built.
+              I have experience with Laravel, Django and Go among other frameworks and programming
+              languages.
             </p>
           </div>
         </div>
