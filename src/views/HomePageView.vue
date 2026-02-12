@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[rgb(19,21,41)]/40 flex justify-center p-2 rounded-md backdrop-blur-md h-full">
+  <div class="bg-[rgb(19,21,41)]/60 flex justify-center p-2 rounded-md backdrop-blur-md h-full">
     <div class="p-1">
       <div class="content grid gap-4 w-3/4 p-2 h-auto">
         <!-- about -->
@@ -92,6 +92,17 @@
               I have experience with Laravel, Django and Go among other frameworks and programming
               languages.
             </p>
+
+            <div class="flex space-x-2 mt-4 items-center align-middle">
+              <img src="@/assets/laravel-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/angular-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/vue-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/typescript-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/django-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/python-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/php-ic.svg" class="w-6 h-6" />
+              <img src="@/assets/Go-ic.svg" class="w-8 h-8" />
+            </div>
           </div>
         </div>
 
