@@ -101,7 +101,7 @@
               <img src="@/assets/django-ic.svg" class="w-6 h-6" />
               <img src="@/assets/python-ic.svg" class="w-6 h-6" />
               <img src="@/assets/php-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/Go-ic.svg" class="w-8 h-8" />
+              <img src="@/assets/go-ic.svg" class="w-8 h-8" />
             </div>
           </div>
         </div>
