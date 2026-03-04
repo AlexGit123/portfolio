@@ -78,10 +78,10 @@ onMounted(() => {})
 .blob {
   width: 1200px;
   height: 2000px;
-  background: radial-gradient(circle at 30% 30%, #ec9396, #c70e39);
+  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px #f6416c);
+  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
@@ -92,10 +92,10 @@ onMounted(() => {})
 .blob1 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #ec9396, #c70e39);
+  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px #f6416c);
+  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
@@ -106,10 +106,10 @@ onMounted(() => {})
 .blob2 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #ec9396, #c70e39);
+  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px #f6416c);
+  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
@@ -120,10 +120,10 @@ onMounted(() => {})
 .blob3 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #ec9396, #c70e39);
+  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px #f6416c);
+  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;

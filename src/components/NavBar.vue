@@ -115,7 +115,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(82, 129, 211, 0.15);
+  box-shadow: 0 4px 12px rgba(226, 140, 35, 0.15);
 }
 
 .icon {
@@ -149,7 +149,6 @@ export default {
   .compact-sidebar {
     width: 60px;
     padding: 0.75rem 0.25rem;
-    /* Adjusted shadow for mobile */
     box-shadow: -2px 4px 16px rgba(0, 0, 0, 0.2);
   }
 

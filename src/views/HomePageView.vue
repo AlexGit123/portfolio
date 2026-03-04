@@ -159,7 +159,7 @@ export default {
 }
 
 .gradient {
-  background: -webkit-linear-gradient(#d83c3c, #9483f0);
+  background: -webkit-linear-gradient(#eacc0c, #f75409);
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
