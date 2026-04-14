@@ -78,7 +78,7 @@ onMounted(() => {})
 .blob {
   width: 1200px;
   height: 2000px;
-  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
+  background: radial-gradient(circle at 30% 30%, #4381f3, #1803ff);
   mix-blend-mode: screen;
   opacity: 60%;
   filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
@@ -92,10 +92,10 @@ onMounted(() => {})
 .blob1 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
+  background: radial-gradient(circle at 30% 30%, #4381f3, #1803ff);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
+  filter: drop-shadow(0 0 80px rgba(55, 4, 243, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
@@ -103,27 +103,27 @@ onMounted(() => {})
   left: -90px;
 }
 
-.blob2 {
+/* .blob2 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
+  background: radial-gradient(circle at 30% 30%, #4381f3, #1803ff);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
+  filter: drop-shadow(0 0 80px rgba(55, 4, 243, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
   top: -500px;
   left: 500px;
-}
+} */
 
 .blob3 {
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle at 30% 30%, #9e4806, #e5431b);
+  background: radial-gradient(circle at 30% 30%, #4381f3, #1803ff);
   mix-blend-mode: screen;
   opacity: 60%;
-  filter: drop-shadow(0 0 80px rgba(82, 129, 211, 0.15));
+  filter: drop-shadow(0 0 80px rgba(55, 4, 243, 0.15));
   animation: blob-morph 18s ease-in-out infinite alternate;
   position: fixed;
   z-index: 0;
