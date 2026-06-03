@@ -12,7 +12,7 @@ onMounted(() => {})
     <div class="blob2"></div>
     <div class="blob3"></div>
 
-    <div class="main-content main-content__ani">
+    <div class="main-content main-content__ani flex justify-center">
       <HomePageView />
     </div>
 
@@ -34,10 +34,7 @@ onMounted(() => {})
 }
 
 .main-content {
-  flex: 1;
-  min-width: 0;
   padding-right: 1rem;
-  z-index: 100;
   padding-left: 50px;
 }
 

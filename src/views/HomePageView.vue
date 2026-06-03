@@ -1,16 +1,16 @@
 <template>
-  <div class="bg-[rgb(19,21,41)]/60 flex justify-center p-2 rounded-md backdrop-blur-md h-full">
+  <div class="bg-[rgb(19,21,41)]/60 flex justify-center p-2 rounded-md backdrop-blur-md h-full w-3/4">
     <div class="p-1 flex justify-center">
       <div class="content grid gap-4 w-3/4 p-2 h-auto">
         <!-- about -->
         <div id="about" class="h-1/2">
-          <p class="font-extrabold text-2xl mb-2 gradient">About</p>
+          <p class="font-extrabold text-2xl mb-2 gradient tracking-wide">About</p>
           <div class="p-2 bg-gray-700/80 rounded-md">
             <div>
               <p class="font-extrabold text-xl pb-1 text-white">Hi, I'm Alex</p>
             </div>
             <div class="text-md">
-              <p class="text-gray-300">
+              <p class="text-gray-300 leading-10">
                 I'm a Software Engineer with a passion for building web applications, crafting
                 designs, and learning new technologies.
               </p>
@@ -20,14 +20,14 @@
 
         <!-- projects -->
         <div>
-          <p class="font-extrabold text-2xl mb-2 gradient">Projects</p>
+          <p class="font-extrabold text-2xl mb-2 gradient tracking-wide">Projects</p>
 
           <div class="bg-gray-700/80 rounded-md p-2">
             <div class="space-y-4 pt-2 pb-2 h-full text-white">
               <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
                 <div class="flex flex-col">
                   <p class="pt-2 pb-2 font-bold">FLIX IT</p>
-                  <p class="pb-2 text-gray-300">
+                  <p class="pb-2 text-gray-300 leading-10">
                     FLIX IT is a responsive movie browsing application built with Vue, Go, and
                     Tailwind CSS, allowing users to search and explore movies using data from the
                     OMDb API.
@@ -47,7 +47,7 @@
                       </button>
                     </a>
                   </div>
-                  <p class="pb-2 text-gray-300">
+                  <p class="pb-2 text-gray-300 leading-10">
                     This website is made with HTML, Tailwind CSS, and some plain CSS. I built it to
                     show case some projects I've worked on and it will also be used to experiment
                     with designs.
@@ -68,7 +68,7 @@
                     </a>
                   </div>
 
-                  <p class="pb-2 text-gray-300">
+                  <p class="pb-2 text-gray-300 leading-10">
                     This project enables 3D exploration of human anatomy. I developed a coupled
                     web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
                     allow educators to create assignments for their students.
@@ -81,14 +81,14 @@
 
         <!-- skills -->
         <div>
-          <p class="font-extrabold text-2xl gradient mb-2">Skills</p>
+          <p class="font-extrabold text-2xl gradient mb-2 tracking-wide">Skills</p>
           <div class="pl-4 bg-gray-700/80 w-full rounded-md p-2 text-gray-300">
-            <p class="pb-2">
+            <p class="pb-2 leading-10">
               I’m comfortable working across the full stack, with a focus on frontend development.
               Currently, my day-to-day work revolves around Angular, TypeScript, and CSS, but I also
               enjoy building and maintaining backend services.
             </p>
-            <p>
+            <p class="pb-2 leading-10">
               I have experience with Laravel, Django and Go among other frameworks and programming
               languages.
             </p>
@@ -107,7 +107,7 @@
         </div>
 
         <!-- experience -->
-        <p class="font-extrabold text-2xl gradient">Experience</p>
+        <p class="font-extrabold text-2xl gradient tracking-wide">Experience</p>
 
         <div class="space-y-4 bg-gray-700/80 h-full p-2 rounded-md">
           <div class="text-white bg-gray-800 rounded-md p-2">
