@@ -1,167 +1,72 @@
 <template>
-  <div class="bg-[rgb(19,21,41)]/60 flex justify-center p-2 rounded-md backdrop-blur-md h-full w-3/4">
-    <div class="p-1 flex justify-center">
-      <div class="content grid gap-4 w-3/4 p-2 h-auto">
-        <!-- about -->
-        <div id="about" class="h-1/2">
-          <p class="font-extrabold text-2xl mb-2 gradient tracking-wide">About</p>
-          <div class="p-2 bg-gray-700/80 rounded-md">
-            <div>
-              <p class="font-extrabold text-xl pb-1 text-white">Hi, I'm Alex</p>
-            </div>
-            <div class="text-md">
-              <p class="text-gray-300 leading-10">
-                I'm a Software Engineer with a passion for building web applications, crafting
-                designs, and learning new technologies.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- projects -->
-        <div>
-          <p class="font-extrabold text-2xl mb-2 gradient tracking-wide">Projects</p>
-
-          <div class="bg-gray-700/80 rounded-md p-2">
-            <div class="space-y-4 pt-2 pb-2 h-full text-white">
-              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
-                <div class="flex flex-col">
-                  <p class="pt-2 pb-2 font-bold">FLIX IT</p>
-                  <p class="pb-2 text-gray-300 leading-10">
-                    FLIX IT is a responsive movie browsing application built with Vue, Go, and
-                    Tailwind CSS, allowing users to search and explore movies using data from the
-                    OMDb API.
-                  </p>
-                </div>
-              </div>
-
-              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
-                <div class="flex flex-col text-white">
-                  <div class="flex justify-between items-center pt-2 pb-2">
-                    <p class="font-bold">Portfolio</p>
-                    <a href="https://github.com/AlexGit123/portfolio">
-                      <button
-                        class="text-sm rounded-xl font-thin border p-1 h-8 bg-gray-800/50 border-transparent text-gray-300 hover:bg-gray-700/75 hover:border-gray-600/20 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
-                      >
-                        GitHub Repo
-                      </button>
-                    </a>
-                  </div>
-                  <p class="pb-2 text-gray-300 leading-10">
-                    This website is made with HTML, Tailwind CSS, and some plain CSS. I built it to
-                    show case some projects I've worked on and it will also be used to experiment
-                    with designs.
-                  </p>
-                </div>
-              </div>
-
-              <div class="pl-4 pr-2 bg-gray-800 w-full rounded-md">
-                <div class="flex flex-col text-white">
-                  <div class="flex justify-between items-center pt-2 pb-2 align-middle">
-                    <p class="font-bold">Digital Anatomy</p>
-                    <a href="https://github.com/jrcz-data-science-lab/Virtual-Anatomy-UE">
-                      <button
-                        class="text-sm rounded-xl font-thin border p-1 h-8 bg-gray-800/50 border-transparent text-gray-300 hover:bg-gray-700/75 hover:border-gray-600/20 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
-                      >
-                        GitHub Repo
-                      </button>
-                    </a>
-                  </div>
-
-                  <p class="pb-2 text-gray-300 leading-10">
-                    This project enables 3D exploration of human anatomy. I developed a coupled
-                    web-app made with Django, HTMX and Tailwind with Unreal Engine Blueprints to
-                    allow educators to create assignments for their students.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- skills -->
-        <div>
-          <p class="font-extrabold text-2xl gradient mb-2 tracking-wide">Skills</p>
-          <div class="pl-4 bg-gray-700/80 w-full rounded-md p-2 text-gray-300">
-            <p class="pb-2 leading-10">
-              I’m comfortable working across the full stack, with a focus on frontend development.
-              Currently, my day-to-day work revolves around Angular, TypeScript, and CSS, but I also
-              enjoy building and maintaining backend services.
-            </p>
-            <p class="pb-2 leading-10">
-              I have experience with Laravel, Django and Go among other frameworks and programming
-              languages.
-            </p>
-
-            <div class="flex space-x-2 mt-4 items-center align-middle">
-              <img src="@/assets/laravel-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/angular-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/vue-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/typescript-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/django-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/python-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/php-ic.svg" class="w-6 h-6" />
-              <img src="@/assets/go-ic.svg" class="w-8 h-8" />
-            </div>
-          </div>
-        </div>
-
-        <!-- experience -->
-        <p class="font-extrabold text-2xl gradient tracking-wide">Experience</p>
-
-        <div class="space-y-4 bg-gray-700/80 h-full p-2 rounded-md">
-          <div class="text-white bg-gray-800 rounded-md p-2">
-            <div class="flex space-x-4">
-              <h1 class="text-md mb-1">
-                <span class="font-extrabold"> Frontend Developer </span> | Colijn-IT | Fulltime Mar
-                2025 - current
-              </h1>
-            </div>
-            <div>
-              <p class="text-gray-300">
-                As a frontend developer at Colijn-IT, I work on a production ERP system used by
-                multiple clients. My work focuses on translating complex business processes into
-                usable, reliable interfaces.
-              </p>
-            </div>
-          </div>
-
-          <div class="text-white bg-gray-800 rounded-md p-2">
-            <div class="flex space-x-4">
-              <h1 class="text-md mb-1">
-                <span class="font-extrabold"> Software Engineer </span>| JRCZ | Internship 2024
-              </h1>
-            </div>
-            <div>
-              <p class="text-gray-300">
-                Developed the Digital Anatomy application using Unreal Engine and a Django web-app
-                to create a learning experience for education purposes.
-              </p>
-            </div>
-          </div>
-        </div>
+  <div class="grid grid-cols-2 grid-rows-3 gap-4 min-h-dvh text-white p-10">
+    <div class="col-start">
+      <h1 class="title sub-font">DES</h1>
+    </div>
+    <div class="flex justify-center">
+      <div class="col-start-2 row-start-1">
+        <NavBar></NavBar>
       </div>
     </div>
+
+    <div class="col-start row-start-2 flex items-center">
+      <div class="">
+        <p class="text-3xl min-h-full font opacity-80 leading-10">
+          Designing and developing websites, software applications, and AI solutions for businesses and
+          individuals.
+        </p>
+      </div>
+    </div>
+    <div class="col-start-2 row-start-2">
+      <!-- <svg
+        width="442"
+        height="288"
+        viewBox="0 0 442 288"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="221" cy="40" r="40" fill="#D9D9D9" />
+        <circle cx="310" cy="100" r="40" fill="#D9D9D9" />
+        <circle cx="313" cy="195" r="40" fill="#D9D9D9" />
+        <circle cx="221" cy="144" r="40" fill="#D9D9D9" />
+        <circle cx="129" cy="100" r="40" fill="#D9D9D9" />
+        <circle cx="129" cy="198" r="40" fill="#D9D9D9" />
+        <circle cx="402" cy="144" r="40" fill="#D9D9D9" />
+        <circle cx="221" cy="248" r="40" fill="#D9D9D9" />
+        <circle cx="40" cy="144" r="40" fill="#D9D9D9" />
+      </svg> -->
+    </div>
+    <div class="col-start row-start-3 sub-font text-xl opacity-70 flex flex-col justify-end">
+      <p>Working Globally</p>
+      <p>
+        Located in the Netherlands -
+        <span class="text-orange-400">
+          {{ Date.now().toLocaleString('en') }}
+        </span>
+      </p>
+    </div>
+    <div class="col-start-2 row-start-3"></div>
+
+    <div class="col-span-2 row-start-4 w-full flex justify-center">
+      <button
+        class="h-10 text-white border-orange-400 border-2 px-16 py-2 rounded-lg hover:bg-orange-400 hover:text-black hover:px-20 transition duration-300 ease-in-out"
+      >
+        <a class="text-xl sub-font"> PROJECTS </a>
+      </button>
+    </div>
   </div>
+  <div class="w-full h-full"></div>
 </template>
-<script>
-export default {
-  components: {},
-  data() {
-    return {}
-  }
-}
+<script lang="ts" setup>
+import NavBar from '../components/NavBar.vue'
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Geneva&display=swap');
 .font {
-  font-family: 'Geneva', sans-serif;
+  font-family: 'Ramabhadra', sans-serif;
 }
 
-.gradient {
-  background: -webkit-linear-gradient(#228be7, #502fc8);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.sub-font {
+  font-family: 'Bebas Neue', sans-serif;
 }
 </style>

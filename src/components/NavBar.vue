@@ -1,18 +1,10 @@
 <template>
   <nav class="compact-sidebar">
     <div class="nav-content">
-      <!-- Profile -->
-      <div class="profile-section">
-        <div class="profile-avatar">
-          <img src="@/assets/me.png" alt="Profile" class="avatar-img" />
-        </div>
-        <p class="profile-name">Alex</p>
-      </div>
-
       <!-- Navigation Links -->
       <div class="nav-links">
         <a href="https://github.com/AlexGit123" class="nav-item" title="GitHub">
-          <img class="icon" src="@/assets/github1.svg" alt="GitHub" />
+          HOME
         </a>
 
         <a
@@ -20,11 +12,15 @@
           class="nav-item"
           title="LinkedIn"
         >
-          <img class="icon" src="@/assets/linkedin.svg" alt="LinkedIn" />
+          PROJECTS
         </a>
 
         <a href="#" class="nav-item" title="Download CV">
-          <img class="icon" src="@/assets/download.svg" alt="CV" />
+          PROCESS
+        </a>
+
+        <a href="#" class="nav-item" title="Download CV">
+          CONTACT
         </a>
       </div>
     </div>
@@ -40,7 +36,7 @@ export default {
 
 <style scoped>
 .compact-sidebar {
-  width: 80px;
+  width: 460px;
   background-color: rgba(31, 33, 34, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 16px;
@@ -92,17 +88,18 @@ export default {
 
 .nav-links {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
   align-items: center;
+  gap: 1rem;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
+  width: auto;
   height: 48px;
+  padding: 10px ;
   border-radius: 12px;
   text-decoration: none;
   color: #9ca3af;
