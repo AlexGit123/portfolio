@@ -1,39 +1,47 @@
 <script setup lang="ts">
 import HomePageView from './views/HomePageView.vue'
-import NavBar from './components/NavBar.vue'
+// import NavBar from './components/NavBar.vue'
 import { onMounted } from 'vue'
 import FooterView from './views/FooterView.vue'
+import ProjectsView from './views/ProjectsView.vue'
 onMounted(() => {})
 </script>
 <template>
   <div class="app-container">
-    <div class="blob"></div>
-    <div class="blob1"></div>
-    <div class="blob2"></div>
-    <div class="blob3"></div>
-
-    <div class="main-content main-content__ani flex justify-center">
-      <HomePageView />
-    </div>
-
-    <div class="sidebar-container">
-      <NavBar />
-    </div>
+    <HomePageView />
   </div>
+  <div class="project-view-container">
+    <ProjectsView />
+  </div>
+  <!-- <ProjectsView class="app-container" /> -->
   <FooterView></FooterView>
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
 
 .app-container {
-  display: flex;
+  /* display: flex;
   min-height: 100vh;
   gap: 1rem;
-  padding: 1rem;
-  background-color: rgb(22, 22, 31);
+  padding: 1rem; */
+  z-index:100;
+  min-height: 100vh;
+  /* background: url(@/assets/bg.jpeg); */
 }
 
-.main-content {
+.project-view-container {
+  /* display: flex;
+  min-height: 100vh;
+  gap: 1rem;
+  padding: 1rem; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
+}
+
+/* .main-content {
   padding-right: 1rem;
   padding-left: 50px;
 }
@@ -47,7 +55,7 @@ onMounted(() => {})
   z-index: 100;
   flex-shrink: 0;
   align-self: flex-start;
-}
+} */
 
 .font {
   font-family: 'Geneva', sans-serif;
@@ -55,21 +63,6 @@ onMounted(() => {})
 
 .title {
   font-size: 600%;
-}
-
-@media (max-width: 768px) {
-  .app-container {
-    padding: 0.5rem;
-    gap: 0.5rem;
-  }
-
-  .main-content {
-    padding-right: 0.5rem;
-  }
-
-  .sidebar-container {
-    width: 60px;
-  }
 }
 
 .blob {
