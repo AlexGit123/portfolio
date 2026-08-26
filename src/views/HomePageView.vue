@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-2 grid-rows-3 gap-4 min-h-dvh text-white p-10">
     <div class="col-start">
-      <h1 class="title sub-font">DES</h1>
+      <h1 class="title tracking-wider sub-font">DES</h1>
     </div>
     <div class="flex justify-center">
       <div class="col-start-2 row-start-1">
@@ -37,11 +37,10 @@
       </svg> -->
     </div>
     <div class="col-start row-start-3 sub-font text-xl opacity-70 flex flex-col justify-end">
-      <p>Working Globally</p>
       <p>
         Located in the Netherlands -
         <span class="text-orange-400">
-          {{ Date.now().toLocaleString('en') }}
+          {{ currentTime }}
         </span>
       </p>
     </div>
@@ -58,7 +57,14 @@
   <div class="w-full h-full"></div>
 </template>
 <script lang="ts" setup>
+import { ref } from 'vue'
 import NavBar from '../components/NavBar.vue'
+
+const currentTime = ref(new Date().toLocaleTimeString('en-GB', { hour12: false }))
+
+window.setInterval(() => {
+  currentTime.value = new Date().toLocaleTimeString('en-GB', { hour12: false })
+}, 1000)
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Geneva&display=swap');
