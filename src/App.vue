@@ -4,7 +4,7 @@ import { onMounted } from 'vue'
 import FooterView from './views/FooterView.vue'
 import ContainerView from './views/ContainerView.vue'
 import ProjectsView from './views/ProjectsView.vue'
-import ExperienceView from './views/ExperienceView.vue'
+// import ExperienceView from './views/ExperienceView.vue'
 onMounted(() => {})
 </script>
 <template>
@@ -15,7 +15,7 @@ onMounted(() => {})
     <ContainerView />
   </div>
   <ProjectsView></ProjectsView>
-  <ExperienceView></ExperienceView>
+  <!-- <ExperienceView></ExperienceView> -->
   <FooterView></FooterView>
 </template>
 <style>
